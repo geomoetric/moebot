@@ -1,5 +1,7 @@
 var sel; // Selection area
 var buttons = []; // Array of design objects
+var gridTopLefts = [];
+var gridCenters = [];
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -28,13 +30,13 @@ function draw() {
     buttons[i].display();
   }
   
-  downvote = createButton('&#128078;');
-  downvote.position(width/2-30, height-40);
-  downvote.mousePressed(testo);
+  // downvote = createButton('&#128078;');
+  // downvote.position(width/2-30, height-40);
+  // downvote.mousePressed(testo);
 
-  upvote = createButton('&#128077;');
-  upvote.position(width/2+30, height-40);
-  upvote.mousePressed(testo());
+  // upvote = createButton('&#128077;');
+  // upvote.position(width/2+30, height-40);
+  // upvote.mousePressed(testo());
 }
 
 function rand() {

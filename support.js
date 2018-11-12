@@ -1,10 +1,12 @@
-function testo() {
-  console.log("Testo Works");
-}
-
-window.onresize = function(){
+window.onresize = function() {
   location.reload();
   // insert a message
   //alert('reloaded');
 }
 
+function keyPressed() {
+  if (keyCode === ESCAPE) {
+    console.log("button press");
+    window.location.reload();
+  }
+}
