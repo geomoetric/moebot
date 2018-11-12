@@ -1,13 +1,5 @@
-var x,
-  y,
-  w1,
-  w2,
-  h1,
-  h2,
-  sel,
-  liked,
-  i;
-var buttons = [];
+var sel; // Selection area
+var buttons = []; // Array of design objects
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -23,7 +15,6 @@ function setup() {
 }
 
 function windowResized() {
-  //resizeCanvas(windowWidth, windowHeight);
   redraw();
 }
 
@@ -44,7 +35,6 @@ function draw() {
   upvote = createButton('&#128077;');
   upvote.position(width/2+30, height-40);
   upvote.mousePressed(testo());
-  //button.mousePressed(greet);
 }
 
 function rand() {
@@ -100,14 +90,7 @@ function rand() {
 
 function mousePressed() {
 
-  //console.log('Width: ' + testo.w1 + '-' + testo.w2);
-  //console.log('Height: ' + testo.h1 + '-' + testo.h2);
-  //console.log('Mouse: x=' + mouseX + ', y=' + mouseY);
-
   if ( mouseX >= testo.w1 && mouseX <= testo.w2 && mouseY >= testo.h1 && mouseY <= testo.h2) {
-    //alert('click');
     testo.click();
-    //testo.display();
   }
-  // }
 }
