@@ -6,9 +6,10 @@ var gridCenters = [];
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background('#f8f8f9');
-  x = width/2;
-  y = height/2;
 
+  // Create grid
+  // grid();
+  // Load design objects
   for (var i = 0; i < 5; i++) {
     buttons.push(new rand());
   }
