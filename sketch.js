@@ -1,17 +1,24 @@
 var x,
   y,
-  w1
+  w1,
   w2,
   h1,
   h2,
   sel,
-  liked;
+  liked,
+  i;
+var buttons = [];
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background('#f8f8f9');
   x = width/2;
   y = height/2;
+
+  for (var i = 0; i < 5; i++) {
+    buttons.push(new rand());
+  }
+
   testo = new rand();
 }
 
@@ -23,10 +30,13 @@ function windowResized() {
 function draw() {
   fill('#18181a');
   noStroke();
-  ellipse(56, 46, 55, 55);
   testo.display();
   sel = width/40;
 
+  for (var i=0; i<buttons.length; i++) {
+    buttons[i].display();
+  }
+  
   downvote = createButton('&#128078;');
   downvote.position(width/2-30, height-40);
   downvote.mousePressed(testo);
