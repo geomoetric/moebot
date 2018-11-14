@@ -8,7 +8,7 @@ function setup() {
   background('#f8f8f9');
 
   // Create grid
-  // grid();
+  grid();
   // Load design objects
   for (var i = 0; i < 5; i++) {
     buttons.push(new rand());
@@ -40,6 +40,22 @@ function draw() {
   // upvote.mousePressed(testo());
 }
 
+// Grid Function
+function grid() {
+  wWidth = windowWidth;
+  wHeight = windowHeight;
+
+  if (width < height) {
+    baseWidth = wWidth / 30;
+    baseHeight = wHeight / 40;
+  } else {
+    baseWidth = wWidth / 40;
+    baseHeight = wHeight / 30;
+  }
+
+  console.log('width: ' + wWidth + ', height: ' + wHeight + ', baseWidth: ' + baseWidth + ', baseHeight: ' + baseHeight);
+}
+// Object Template
 function rand() {
   this.x = random(width);
   this.y = random(height);
