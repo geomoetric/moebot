@@ -8,7 +8,7 @@ function setup() {
   background('#f8f8f9');
 
   // Create grid
-  grid();
+  //grid();
   // Load design objects
   for (var i = 0; i < 5; i++) {
     buttons.push(new rand());
@@ -42,18 +42,80 @@ function draw() {
 
 // Grid Function
 function grid() {
-  wWidth = windowWidth;
-  wHeight = windowHeight;
+
+  function storeCoordinate(xVal, yVal, array) {
+    array.push({x: xVal, y: yVal});
+  }
+
+  var wWidth = windowWidth;
+  var wHeight = windowHeight;
+  var baseWidth, baseHeight, gridWidth, gridHeight, cellWidth, cellHeight;
 
   if (width < height) {
     baseWidth = wWidth / 30;
     baseHeight = wHeight / 40;
+
+    gridWidth = wWidth - (4 * baseWidth);
+    gridHeight = wHeight - (6 * baseHeight);
+
+    cellWidth = (gridWidth - (3 * baseWidth)) / 4;
+    cellHeight = (gridHeight - (4 * baseHeight)) / 5;
+
+    startX = baseWidth * 2;
+    startY = baseHeight * 2;
+
+    while (y <= 5) {
+      yVal = (y * (cellHeight + baseHeight)) + startY;
+      while (x <= 4) {
+        xVal = (x * (cellWidth + baseWidth)) + startX;
+        storeCoordinate(xVal, yVal, gridTopLefts);
+      }
+    }
   } else {
     baseWidth = wWidth / 40;
     baseHeight = wHeight / 30;
+
+    gridWidth = wWidth - (6 * baseWidth);
+    gridHeight = wHeight - (4 * baseHeight);
+
+    cellWidth = (gridWidth - (4 * baseWidth)) / 5;
+    cellHeight = (gridHeight - (3 * baseHeight)) / 4;
+
+    startX = baseWidth * 2;
+    startY = baseHeight * 2;
+
+    var y = 0;
+    var x = 0;
+
+    while (y <= 5) {
+      yVal = (y * (cellHeight + baseHeight)) + startY;
+      while (x <= 4) {
+        xVal = (x * (cellWidth + baseWidth)) + startX;
+        storeCoordinate(xVal, yVal, gridTopLefts);
+      }
+    }
   }
 
-  console.log('width: ' + wWidth + ', height: ' + wHeight + ', baseWidth: ' + baseWidth + ', baseHeight: ' + baseHeight);
+  // var coords = [];
+  // storeCoordinate(3, 5, coords);
+  // storeCoordinate(19, 1000, coords);
+  // storeCoordinate(-300, 4578, coords);
+
+  // coords[0].x == 3   // x value
+  // coords[0].y == 5   // y value
+
+  // // to loop through coordinate values
+  // for (var i = 0; i < coords.length; i++) {
+  //   var x = coords[i].x;
+  //   var y = coords[i].y;
+  // }
+
+  // Check proportions
+  // console.log('width: ' + wWidth + ', height: ' + wHeight + ', baseWidth: ' + baseWidth + ', baseHeight: ' + baseHeight);
+  //console.log('width: ' + wWidth + ', height: ' + wHeight + ', gridWidth: ' + gridWidth + ', gridHeight: ' + gridHeight);
+  //console.log('width: ' + wWidth + ', height: ' + wHeight + ', gridWidth: ' + gridWidth + ', gridHeight: ' + gridHeight + ', cellWidth: ' + cellWidth + ', cellHeight: ' + cellHeight);
+  console.log(gridTopLefts);
+
 }
 // Object Template
 function rand() {
