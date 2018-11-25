@@ -9,4 +9,7 @@ function keyPressed() {
     console.log("button press");
     window.location.reload();
   }
+  if (keyCode === TAB) {
+    showGrid();
+  }
 }
