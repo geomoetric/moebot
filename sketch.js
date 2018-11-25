@@ -106,31 +106,17 @@ function grid() {
     }
   }
 
-  // var coords = [];
-  // storeCoordinate(3, 5, coords);
-  // storeCoordinate(19, 1000, coords);
-  // storeCoordinate(-300, 4578, coords);
-
-  // coords[0].x == 3   // x value
-  // coords[0].y == 5   // y value
-
-  // // to loop through coordinate values
-  // for (var i = 0; i < coords.length; i++) {
-  //   var x = coords[i].x;
-  //   var y = coords[i].y;
-  // }
-
-  // Check proportions
-  // console.log('width: ' + wWidth + ', height: ' + wHeight + ', baseWidth: ' + baseWidth + ', baseHeight: ' + baseHeight);
-  //console.log('width: ' + wWidth + ', height: ' + wHeight + ', gridWidth: ' + gridWidth + ', gridHeight: ' + gridHeight);
-  //console.log('width: ' + wWidth + ', height: ' + wHeight + ', gridWidth: ' + gridWidth + ', gridHeight: ' + gridHeight + ', cellWidth: ' + cellWidth + ', cellHeight: ' + cellHeight);
+  for (var i = 0; i < gridTopLefts.length; i++) {
+    tempx = (parseFloat(gridTopLefts[i].x) + parseFloat(cellWidth / 2)).toFixed(2);
+    tempy = (parseFloat(gridTopLefts[i].y) + parseFloat(cellHeight / 2)).toFixed(2);
+    // tempy = gridTopLefts[i].y + (cellHeight / 2);
+    storeCoordinate(tempx, tempy, gridCenters);
+  }
 
   console.log(gridTopLefts);
-  // console.log(gridTopLefts[1]);
-  // console.log(gridTopLefts[0].x);
-  // console.log(gridTopLefts[0].y);
-
+  console.log(gridCenters);
 }
+
 // Object Template
 function rand() {
   this.x = random(width);
