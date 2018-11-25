@@ -128,7 +128,9 @@ function rand() {
 
   // Very Orderly
   // this.diameter = random(baseWidth, cellWidth);
-  let modSize = (cellWidth / 2) * round(random(1, 4));
+  // Interesting scales
+  // let modSize = (cellWidth / 5) * round(random(1, 10));
+  let modSize = (cellWidth / 5) * (round(random(1, 5) * 2));
   this.diameter = modSize;
   this.liked = 0;
 
@@ -151,7 +153,7 @@ function rand() {
       this.dislike();
     } else {
       fill('#f8f8f9');
-      ellipse(this.x, this.y, this.diameter + sel + 10, this.diameter + sel + 10);
+      ellipse(this.x, this.y, this.diameter + sel + 0.35, this.diameter + sel + 0.35);
       this.display();
     }
 
@@ -180,14 +182,28 @@ function rand() {
 function mousePressed() {
   for (var i=0; i<buttons.length; i++) {
     buttons[i].display();
-    console.log('click');
-    if ( mouseX >= buttons[i].w1 && mouseX <= buttons[i].w2 && mouseY >= buttons[i].h1 && mouseY <= buttons[i].h2) {
+    if ( mouseX >= parseFloat(buttons[i].w1) && mouseX <= parseFloat(buttons[i].w2) && mouseY >= parseFloat(buttons[i].h1) && mouseY <= parseFloat(buttons[i].h2)) {
       buttons[i].click();
+      console.log('click');
     }
   }
+
+  // if ( mouseX >= buttons[1].w1 && mouseX <= buttons[1].w2 && mouseY >= buttons[1].h1 && mouseY <= buttons[1].h2) {
+    // buttons[1].click();
+    // console.log('click');
+  // }
+
   // if ( mouseX >= testo.w1 && mouseX <= testo.w2 && mouseY >= testo.h1 && mouseY <= testo.h2) {
   //   testo.click();
   // }
+
+  // console.log(buttons[1].w1);
+  // if ( mouseX >= parseFloat(buttons[1].w1) && mouseX <= parseFloat(buttons[1].w2) && mouseY >= parseFloat(buttons[1].h1) && mouseY <= parseFloat(buttons[1].h2)) {
+  //   buttons[1].click();
+  // }
+
+  
+  // if ( mouseX >= buttons[1].w1 && mouseX <= buttons[1].w2 && mouseY >= buttons[1].h1 && mouseY <= buttons[1].h2) {
 }
 
 function showGrid() {
