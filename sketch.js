@@ -16,7 +16,7 @@ function setup() {
     buttons.push(new rand());
   }
 
-  testo = new rand();
+  //testo = new rand();
 }
 
 function windowResized() {
@@ -26,7 +26,7 @@ function windowResized() {
 function draw() {
   fill('#18181a');
   noStroke();
-  testo.display();
+  //testo.display();
   sel = width/40;
 
   for (var i=0; i<buttons.length; i++) {
@@ -114,9 +114,22 @@ function grid() {
 
 // Object Template
 function rand() {
-  this.x = random(width);
-  this.y = random(height);
-  this.diameter = random(width/9, width/5);
+  let pos = round(random(0, 19));
+  //console.log(position);
+  this.x = gridCenters[pos].x;
+  this.y = gridCenters[pos].y;
+
+  // For largest width...
+  // this.diameter = random(baseWidth, largest);
+  // Really Big
+  // let largest = (cellWidth * 3) + (baseWidth * 2);
+  // Slightly Big
+  // let largest = (cellWidth * 2) + (baseWidth * 1);
+
+  // Very Orderly
+  // this.diameter = random(baseWidth, cellWidth);
+  let modSize = (cellWidth / 2) * round(random(1, 4));
+  this.diameter = modSize;
   this.liked = 0;
 
   this.w1 = this.x - (this.diameter / 2);
@@ -165,10 +178,16 @@ function rand() {
 }
 
 function mousePressed() {
-
-  if ( mouseX >= testo.w1 && mouseX <= testo.w2 && mouseY >= testo.h1 && mouseY <= testo.h2) {
-    testo.click();
+  for (var i=0; i<buttons.length; i++) {
+    buttons[i].display();
+    console.log('click');
+    if ( mouseX >= buttons[i].w1 && mouseX <= buttons[i].w2 && mouseY >= buttons[i].h1 && mouseY <= buttons[i].h2) {
+      buttons[i].click();
+    }
   }
+  // if ( mouseX >= testo.w1 && mouseX <= testo.w2 && mouseY >= testo.h1 && mouseY <= testo.h2) {
+  //   testo.click();
+  // }
 }
 
 function showGrid() {
