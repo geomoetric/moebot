@@ -47,6 +47,7 @@ function grid() {
   var wHeight = windowHeight;
   var baseWidth, baseHeight, gridWidth, gridHeight, cellWidth, cellHeight;
 
+  // Portrait mode
   if (width < height) {
     baseWidth = wWidth / 30;
     baseHeight = wHeight / 40;
@@ -66,15 +67,17 @@ function grid() {
     x = 0;
 
     while (y < 5) {
-      yVal = (y * (cellHeight + baseHeight)) + startY;
+      yVal = ((y * (cellHeight + baseHeight)) + startY).toFixed(2);
       while (x < 4) {
-        xVal = (x * (cellWidth + baseWidth)) + startX;
+        xVal = ((x * (cellWidth + baseWidth)) + startX).toFixed(2);
         storeCoordinate(xVal, yVal, gridTopLefts);
         x = x + 1;
       }
       y = y + 1;
       x = 0;
     }
+
+    // Landscape Mode
   } else {
     baseWidth = wWidth / 40;
     baseHeight = wHeight / 30;
@@ -88,15 +91,18 @@ function grid() {
     startX = baseWidth * 2;
     startY = baseHeight * 2;
 
-    var y = 0;
-    var x = 0;
+    y = 0;
+    x = 0;
 
-    while (y <= 5) {
-      yVal = (y * (cellHeight + baseHeight)) + startY;
-      while (x <= 4) {
-        xVal = (x * (cellWidth + baseWidth)) + startX;
+    while (y < 4) {
+      yVal = ((y * (cellHeight + baseHeight)) + startY).toFixed(2);
+      while (x < 5) {
+        xVal = ((x * (cellWidth + baseWidth)) + startX).toFixed(2);
         storeCoordinate(xVal, yVal, gridTopLefts);
+        x = x + 1;
       }
+      y = y + 1;
+      x = 0;
     }
   }
 
