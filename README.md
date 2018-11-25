@@ -1,4 +1,4 @@
-# Project Title
+# Moe-Bot—Design Generator powered by Machine Intelligence 
 
 One Paragraph of project description goes here
 

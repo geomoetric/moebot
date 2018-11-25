@@ -8,7 +8,8 @@ function setup() {
   background('#f8f8f9');
 
   // Create grid
-  //grid();
+  grid();
+
   // Load design objects
   for (var i = 0; i < 5; i++) {
     buttons.push(new rand());
@@ -30,22 +31,17 @@ function draw() {
   for (var i=0; i<buttons.length; i++) {
     buttons[i].display();
   }
-  
-  // downvote = createButton('&#128078;');
-  // downvote.position(width/2-30, height-40);
-  // downvote.mousePressed(testo);
-
-  // upvote = createButton('&#128077;');
-  // upvote.position(width/2+30, height-40);
-  // upvote.mousePressed(testo());
 }
 
 // Grid Function
 function grid() {
 
   function storeCoordinate(xVal, yVal, array) {
-    array.push({x: xVal, y: yVal});
+    array.push({ x: xVal, y: yVal });
   }
+
+  // storeCoordinate(1, 1, gridTopLefts);
+  // storeCoordinate(2, 2, gridTopLefts);
 
   var wWidth = windowWidth;
   var wHeight = windowHeight;
@@ -64,12 +60,20 @@ function grid() {
     startX = baseWidth * 2;
     startY = baseHeight * 2;
 
-    while (y <= 5) {
+    // console.log('runs');
+
+    y = 0;
+    x = 0;
+
+    while (y < 5) {
       yVal = (y * (cellHeight + baseHeight)) + startY;
-      while (x <= 4) {
+      while (x < 4) {
         xVal = (x * (cellWidth + baseWidth)) + startX;
         storeCoordinate(xVal, yVal, gridTopLefts);
+        x = x + 1;
       }
+      y = y + 1;
+      x = 0;
     }
   } else {
     baseWidth = wWidth / 40;
@@ -114,7 +118,11 @@ function grid() {
   // console.log('width: ' + wWidth + ', height: ' + wHeight + ', baseWidth: ' + baseWidth + ', baseHeight: ' + baseHeight);
   //console.log('width: ' + wWidth + ', height: ' + wHeight + ', gridWidth: ' + gridWidth + ', gridHeight: ' + gridHeight);
   //console.log('width: ' + wWidth + ', height: ' + wHeight + ', gridWidth: ' + gridWidth + ', gridHeight: ' + gridHeight + ', cellWidth: ' + cellWidth + ', cellHeight: ' + cellHeight);
+
   console.log(gridTopLefts);
+  // console.log(gridTopLefts[1]);
+  // console.log(gridTopLefts[0].x);
+  // console.log(gridTopLefts[0].y);
 
 }
 // Object Template
