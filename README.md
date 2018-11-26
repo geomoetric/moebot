@@ -16,13 +16,13 @@ Use these instructions to get a copy of the project up and running on your local
 
 Moe-Bot is developed and tested on Google Chrome (Version 70). Cross-browser testing is in the works! Please submit a pull request if you encounter any weirdness!
 
-### Installing
+### Installation
 
 Moe-Bot is super easy to install. Just download a copy of this repository and open the index.html file directly in your browser.
 
 1. Download the latest version of Moe-Bot from https://github.com/geomoetric/moe-bot/releases.
 2. Unzip the folder.
-3. Open the index.html file in Google Chrome to view it—<kbd>cmd</kbd><kbd>o</kbd>.
+3. Open the index.html file in Google Chrome to view it—<kbd>cmd</kbd><kbd>o</kbd> to open from Chrome directly.
 
 ## Built With
 
