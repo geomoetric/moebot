@@ -1,6 +1,6 @@
-# Moe-Bot—Design Generator powered by Machine Intelligence 
+# Moe-Bot
 
-This tool exists to allow space for people to design with algorithms and artificial intelligence on the web. 
+Moe-bot lets people design with algorithms and artificial intelligence on the web. 
 
 ## Basics
 
@@ -10,50 +10,35 @@ This tool exists to allow space for people to design with algorithms and artific
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Use these instructions to get a copy of the project up and running on your local machine for experimentation and extension.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Moe-Bot is developed and tested on Google Chrome (Version 70). Cross-browser testing is in the works! Please submit a pull request if you encounter any weirdness!
 
-```
-Give examples
-```
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+Moe-Bot is super easy to install. Just download a copy of this repository and open the index.html file directly in your browser.
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+1. Download the latest version of Moe-Bot from https://github.com/geomoetric/moe-bot/releases.
+2. Unzip the folder.
+3. Open the index.html file in Google Chrome to view it—<kbd>cmd</kbd><kbd>o</kbd>.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [p5.js](https://p5js.org/)—Core javascript graphics library.
+* [Tesserae-Regular.otf](https://github.com/hlotvonen/glyph-drawing-club/blob/master/fonts/Tesserae-Regular.otf)—Open source modular symbol font used to generate shapes.
+* [Normalize.css](http://necolas.github.io/normalize.css/)—A stylesheet to standardise css across browsers.
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Eric Moe** - *Initial work* - [Design Portfolio](https://ericmoe.co)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+Moe-Bot falls under the Apache License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Kudos to the [UT Design Department](https://designcreativetech.utexas.edu/) and all the guest critics whose feedback significantly improved this project.
 
