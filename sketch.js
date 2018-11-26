@@ -11,8 +11,11 @@ function setup() {
   grid();
   // Load design objects
   for (var i = 0; i < 5; i++) {
-    buttons.push(new rand());
+    buttons.push(new circ());
   }
+  texto = createDiv('<p>Proin fermentum euismod diam.</p>');
+  texto.position(50, 50);
+  txt();
 }
 
 function draw() {
@@ -24,9 +27,13 @@ function draw() {
   }
 }
 
-
+// Text Template
+function txt() {
+  texto = createDiv('<p>Proin fermentum euismod diam.</p>');
+  texto.position(50, 150);
+}
 // Object Template
-function rand() {
+function circ() {
   let pos = round(random(0, 19));
   //console.log(position);
   this.x = gridCenters[pos].x;
