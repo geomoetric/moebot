@@ -13,7 +13,7 @@ function setup() {
   for (var i = 0; i < 5; i++) {
     buttons.push(new circ());
   }
-  txt();
+  // txt();
 }
 
 function draw() {
