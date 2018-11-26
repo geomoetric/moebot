@@ -1,6 +1,6 @@
 # Moe-Bot—Design Generator powered by Machine Intelligence 
 
-One Paragraph of project description goes here
+This tool exists to allow space for designers to interact with algorithms and artificial intelligence on the web. 
 
 ## Basics
 
