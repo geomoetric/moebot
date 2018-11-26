@@ -6,6 +6,7 @@ This tool exists to allow space for people to design with algorithms and artific
 
 ### Keyboard Shortcuts
 * <kbd>esc</kbd> : Refresh page and generate new design
+* <kbd>tab</kbd> : Overlay grids for reference
 
 ## Getting Started
 
