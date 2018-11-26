@@ -1,6 +1,6 @@
 // Window resize
-window.onresize = function() {
-  location.reload();
+// window.onresize = function() {
+//   location.reload();
   // insert a message
   //alert('reloaded');
 }
@@ -28,5 +28,9 @@ function keyPressed() {
   }
   if (keyCode === TAB) {
     showGrid();
+  }
+  if (keyCode === OPTION) {
+    pdf.save();
+    console.log("printo?");
   }
 }

@@ -1,11 +1,10 @@
-var sel; // Selection area
 var buttons = []; // Array of design objects
 var gridTopLefts = [];
 var gridCenters = [];
-var wWidth, wHeight, baseWidth, baseHeight, gridWidth, gridHeight, cellWidth, cellHeight;
+var sel, wWidth, wHeight, baseWidth, baseHeight, gridWidth, gridHeight, cellWidth, cellHeight, pdf;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  // createCanvas(windowWidth, windowHeight);
   background('#f8f8f9');
   // Create grid
   grid();
@@ -13,7 +12,10 @@ function setup() {
   for (var i = 0; i < 5; i++) {
     buttons.push(new circ());
   }
-  // txt();
+  txt();
+  createCanvas(windowWidth, windowHeight, SVG);
+  pdf = createPDF();
+  pdf.beginRecord();
 }
 
 function draw() {
@@ -23,12 +25,14 @@ function draw() {
   for (var i=0; i<buttons.length; i++) {
     buttons[i].display();
   }
+  // pdf.save();
 }
 
 // Text Template
 function txt() {
-  texto = createDiv('<h1>Heading 1</h1><h2>Heading 2</h2><h3>Heading 3</h3><p>A paragraph (from the <a href="#">Greek paragraphos</a>, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences.</p><textarea class="h1">Heading 1</textarea><textarea class="h2">Heading 2</textarea><textarea class="h3">Heading 3</textarea><textarea>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences.</textarea>');
-  texto.position(50, 50);
+  texto = createDiv('<h1>Heading 1</h1><h2>Heading 2</h2><h3>Heading 3</h3><p>A paragraph (from the <a href="#">Greek paragraphos</a>, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences.</p>');
+  // texto = creatDiv('<textarea class="h1">Heading 1</textarea><textarea class="h2">Heading 2</textarea><textarea class="h3">Heading 3</textarea><textarea>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences.</textarea>');
+  texto.position(50, -10);
 }
 // Object Template
 function circ() {
