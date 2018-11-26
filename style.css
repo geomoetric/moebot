@@ -74,6 +74,8 @@ textarea {
   width: 600px;
   height: 120px;
   font-size: 1em;
+  /* margin: 0; */
+  /* padding: 0; */
 }
 
 i,
@@ -92,8 +94,11 @@ a:active {
 
 /* To add
  * italics
- * underline/link
  * Mobile Text tweak = 16px=1em on mobile
  * 45-75 chars widths
  * Right padding of baseWidth
- * Passed the type checklist tho ✔︎
+
+ * Done
+ * underline/link
+ * Passed the type checklist
+ */
