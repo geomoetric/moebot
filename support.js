@@ -1,9 +1,7 @@
-// Window resize
-// window.onresize = function() {
-//   location.reload();
-  // insert a message
-  //alert('reloaded');
-}
+ // Window resize
+ window.onresize = function() {
+   location.reload();
+ }
 
 function windowResized() {
   redraw();

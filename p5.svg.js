@@ -1,5 +1,5 @@
 /*!!
- *  p5.svg v0.5.2
+ *  p5.svg v0.6.0.0
  *  SVG Runtime for p5.js.
  *
  *  Copyright (C) 2015-2016 Zeno Zeng
@@ -1288,20 +1288,28 @@ Context.prototype.__gc = function() {
     }, 0);
 };
 
+/**
+ * Clear full canvas and do gc
+ * @private
+ */
+Context.prototype.__clearCanvas = function() {
+    // remove all
+    this.generations.forEach(function(elems) {
+        elems.forEach(function(elem) {
+            if (elem) {
+                elem.parentNode.removeChild(elem);
+            }
+        });
+    });
+    this.generations = [[]];
+    var g = this.__createElement('g');
+    this.__root.appendChild(g);
+    this.__currentElement = g;
+};
+
 Context.prototype.clearRect = function(x, y, w, h) {
     if (x === 0 && y === 0 && w === this.__width && h === this.__height) {
-        // remove all
-        this.generations.forEach(function(elems) {
-            elems.forEach(function(elem) {
-                if (elem) {
-                    elem.parentNode.removeChild(elem);
-                }
-            });
-        });
-        this.generations = [[]];
-        var g = this.__createElement('g');
-        this.__root.appendChild(g);
-        this.__currentElement = g;
+        this.__clearCanvas();
     } else {
         C2S.prototype.clearRect.call(this, x, y, w, h);
     }
@@ -1460,6 +1468,10 @@ SVGCanvas.prototype.toDataURL = function(type, options) {
         }
     }
     throw new Error('Unknown type for SVGCanvas.prototype.toDataURL, please use image/jpeg | image/png | image/svg+xml.');
+};
+
+SVGCanvas.prototype.addEventListener = function() {
+    return this.svg.addEventListener.apply(this, arguments);
 };
 
 // will return wrapper element: <div><svg></svg></div>
@@ -2133,6 +2145,9 @@ module.exports = function(p5) {
     };
 
     RendererSVG.prototype.resize = function(w, h) {
+
+        // console.log({w: w, h: h, tw: this.width, th: this.height});
+
         if (!w || !h) {
             // ignore invalid values for width and height
             return;
@@ -2141,10 +2156,7 @@ module.exports = function(p5) {
             // canvas will be cleared if its size changed
             // so, we do same thing for SVG
             // note that at first this.width and this.height is undefined
-            // so, also check that
-            if (this.width && this.height) {
-                this.drawingContext.clearRect(0, 0, this.width, this.height);
-            }
+            this.drawingContext.__clearCanvas();
         }
         this._withPixelDensity(function() {
             p5.Renderer2D.prototype.resize.call(this, w, h);
@@ -2158,10 +2170,10 @@ module.exports = function(p5) {
      * @private
      */
     RendererSVG.prototype._withPixelDensity = function(fn) {
-        var pixelDensity = this._pInst.pixelDensity;
-        this._pInst.pixelDensity = 1; // 1 is OK for SVG
+        var pixelDensity = this._pInst._pixelDensity;
+        this._pInst._pixelDensity = 1; // 1 is OK for SVG
         fn.apply(this);
-        this._pInst.pixelDensity = pixelDensity;
+        this._pInst._pixelDensity = pixelDensity;
     };
 
     RendererSVG.prototype.background = function() {
@@ -2207,6 +2219,8 @@ module.exports = function(p5) {
     /**
      * Draw an image or SVG to current SVG Graphics
      *
+     * FIXME: sx, sy, sWidth, sHeight
+     *
      * @function image
      * @memberof RendererSVG.prototype
      * @param {p5.Graphics|SVGGraphics|SVGElement|Element} image
@@ -2215,7 +2229,7 @@ module.exports = function(p5) {
      * @param {Number} width
      * @param {Number} height
      */
-    RendererSVG.prototype.image = function(img, x, y, w, h) {
+    RendererSVG.prototype.image = function(img,  sx, sy, sWidth, sHeight, x, y, w, h) {
         if (!img) {
             throw new Error('Invalid image: ' + img);
         }
@@ -2536,7 +2550,7 @@ module.exports = function(p5) {
         if (graphics._renderer.svg) {
             var svg = graphics._renderer.svg;
             var url = SVGCanvas.prototype.toDataURL.call(graphics._renderer.elt, 'image/svg+xml');
-            var pg = this.createGraphics(graphics.width, graphics.height);
+            var pg = this.createGraphics(graphics.width, graphics.height, constants.SVG);
             // also copy SVG, so we can keep vector SVG when image(pg) in SVG runtime
             pg._renderer.svg = svg.cloneNode(true);
             pg.loadImage(url, function(img) {
