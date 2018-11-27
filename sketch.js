@@ -4,7 +4,11 @@ var gridCenters = [];
 var sel, wWidth, wHeight, baseWidth, baseHeight, gridWidth, gridHeight, cellWidth, cellHeight, pdf;
 
 function setup() {
+  createCanvas(windowWidth, windowHeight, SVG);
   // createCanvas(windowWidth, windowHeight);
+
+  pdf = createPDF();
+  pdf.beginRecord();
   background('#f8f8f9');
   // Create grid
   grid();
@@ -13,9 +17,6 @@ function setup() {
     buttons.push(new circ());
   }
   txt();
-  createCanvas(windowWidth, windowHeight, SVG);
-  pdf = createPDF();
-  pdf.beginRecord();
 }
 
 function draw() {
