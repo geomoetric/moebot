@@ -1,7 +1,7 @@
 var buttons = []; // Array of design objects
 var gridTopLefts = [];
 var gridCenters = [];
-var sel, wWidth, wHeight, baseWidth, baseHeight, gridWidth, gridHeight, cellWidth, cellHeight, pdf;
+var sel, wWidth, wHeight, baseWidth, baseHeight, gridWidth, gridHeight, cellWidth, cellHeight, pdf, h1, h2, h3, p;
 
 function setup() {
   // For SVG
@@ -21,7 +21,13 @@ function setup() {
   for (var i = 0; i < 5; i++) {
     buttons.push(new circ());
   }
-  txt();
+  h1  = new txt('<textarea class="h1">Heading 1</textarea>');
+
+  h2 = new txt('<textarea class="h2">Heading 2</textarea>');
+
+  h3 = new txt('<textarea class="h3">Heading 3</textarea>');
+
+  p = new txt('<textarea>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences.</textarea>');
 }
 
 function draw() {
@@ -34,11 +40,14 @@ function draw() {
 }
 
 // Text Template
-function txt() {
-  texto = createDiv('<h1>Heading 1</h1><h2>Heading 2</h2><h3>Heading 3</h3><p>A paragraph (from the <a href="#">Greek paragraphos</a>, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences.</p>');
-  // texto = creatDiv('<textarea class="h1">Heading 1</textarea><textarea class="h2">Heading 2</textarea><textarea class="h3">Heading 3</textarea><textarea>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences.</textarea>');
-  texto.position(50, -10);
+function txt(string) {
+  let pos = round(random(0, 19));
+  this.x = gridTopLefts[pos].x;
+  this.y = gridTopLefts[pos].y;
+  this.text = createDiv(string);
+  this.text.position(this.x, this.y);
 }
+
 // Object Template
 function circ() {
   let pos = round(random(0, 19));
