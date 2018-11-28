@@ -28,7 +28,7 @@ function keyPressed() {
     showGrid();
   }
   if (keyCode === OPTION) {
-    pdf.save();
+    // pdf.save();
     console.log("printo?");
   }
 }

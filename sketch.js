@@ -4,11 +4,16 @@ var gridCenters = [];
 var sel, wWidth, wHeight, baseWidth, baseHeight, gridWidth, gridHeight, cellWidth, cellHeight, pdf;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight, SVG);
-  // createCanvas(windowWidth, windowHeight);
+  // For SVG
+  // createCanvas(windowWidth, windowHeight, SVG);
 
-  pdf = createPDF();
-  pdf.beginRecord();
+  // For faster loading
+  createCanvas(windowWidth, windowHeight);
+
+  // To use the p5.pdf.js method
+  // pdf = createPDF();
+  // pdf.beginRecord();
+
   background('#f8f8f9');
   // Create grid
   grid();
@@ -26,7 +31,6 @@ function draw() {
   for (var i=0; i<buttons.length; i++) {
     buttons[i].display();
   }
-  // pdf.save();
 }
 
 // Text Template
