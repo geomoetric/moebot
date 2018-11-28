@@ -74,8 +74,8 @@ textarea {
   width: 600px;
   height: 120px;
   font-size: 1em;
-  /* margin: 0; */
-  /* padding: 0; */
+  margin: 0;
+  padding: 0;
 }
 
 i,
@@ -92,6 +92,13 @@ a:active {
   color: #4967AA;
 }
 
+.h1,
+.h2,
+.h3,
+.marginless {
+  margin: 0;
+  padding: 0;
+}
 /* To add
  * italics
  * Mobile Text tweak = 16px=1em on mobile
