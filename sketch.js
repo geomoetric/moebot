@@ -1,7 +1,25 @@
 var buttons = []; // Array of design objects
 var gridTopLefts = [];
 var gridCenters = [];
-var sel, wWidth, wHeight, baseWidth, baseHeight, gridWidth, gridHeight, cellWidth, cellHeight, pdf, h1, h2, h3, p;
+var sel,
+  wWidth,
+  wHeight,
+  baseWidth,
+  baseHeight,
+  gridWidth,
+  gridHeight,
+  cellWidth,
+  cellHeight,
+  pdf,
+  h1,
+  h2,
+  h3,
+  p,
+  myFont;
+
+function preload() {
+  myFont = loadFont('Tesserae-Regular.otf');
+}
 
 function setup() {
   // For SVG
@@ -37,6 +55,10 @@ function draw() {
   for (var i=0; i<buttons.length; i++) {
     buttons[i].display();
   }
+  fill('#ED225D');
+  textFont(myFont);
+  textSize(100);
+  text('', 100, 100);
 }
 
 // Text Template
@@ -47,7 +69,7 @@ function txt(string, style) {
   this.text = createElement('textarea', string);
   this.text.position(this.x, this.y);
   // this.text.width = (cellWidth * 2) + baseWidth;
-  let textWidth = (cellWidth * 2) + baseWidth;
+  let textWidth = (cellWidth * 2) + (baseWidth * 1);
   textWidth = textWidth + 'px';
   let textHeight = cellHeight + 'px';
   // console.log(typeof textWidth);
