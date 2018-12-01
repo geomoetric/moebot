@@ -1,6 +1,7 @@
 var buttons = []; // Array of design objects
 var gridTopLefts = [];
 var gridCenters = [];
+var shapeOptions = [' '];
 var sel,
   wWidth,
   wHeight,
@@ -15,7 +16,8 @@ var sel,
   h2,
   h3,
   p,
-  myFont;
+  myFont,
+  shape;
 
 function preload() {
   myFont = loadFont('Tesserae-Regular.otf');
@@ -37,7 +39,7 @@ function setup() {
   grid();
   // Load design objects
   for (var i = 0; i < 5; i++) {
-    buttons.push(new circ());
+    buttons.push(new modShape());
   }
   h1  = new txt('Heading 1', 'h1');
 
@@ -47,7 +49,7 @@ function setup() {
 
   p = new txt('A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences.', '');
 
-  bug = new modShape();
+  // bug = new modShape();
 
 }
 
@@ -58,14 +60,16 @@ function draw() {
   for (var i=0; i<buttons.length; i++) {
     buttons[i].display();
   }
-  bug.display();
+  // bug.display();
 }
 
 // Object Template
 function modShape() {
   const pos = round(random(0, 19));
-  this.x = gridCenters[pos].x;
-  this.y = gridCenters[pos].y;
+  this.x = round(gridTopLefts[pos].x);
+  this.y = round(gridTopLefts[pos].y);
+
+  // console.log(this.x + ', ' + this.y);
 
   let modSize = (cellWidth / 5) * (round(random(1, 5) * 2));
   this.diameter = modSize;
@@ -75,7 +79,7 @@ function modShape() {
     fill('#18181a');
     textFont(myFont);
     textSize(modSize);
-    text('', 100, 100);
+    text('', this.x, this.y);
   };
 }
 
