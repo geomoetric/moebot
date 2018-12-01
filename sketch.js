@@ -41,6 +41,7 @@ function setup() {
   for (var i = 0; i < 5; i++) {
     buttons.push(new modShape());
   }
+
   h1  = new txt('Heading 1', 'h1');
 
   h2 = new txt('Heading 2', 'h2');
@@ -68,7 +69,7 @@ function draw() {
 function modShape() {
   const pos = round(random(0, 19));
   this.x = round(gridTopLefts[pos].x);
-  this.y = round(gridTopLefts[pos].y);
+  this.y = (round(gridTopLefts[pos].y)) + cellHeight;
 
   // console.log(this.x + ', ' + this.y);
 
@@ -80,6 +81,8 @@ function modShape() {
     fill('#18181a');
     textFont(myFont);
     textSize(modSize);
+    // text(shape, this.x, this.y);
+    // test case
     text(shape, this.x, this.y);
   };
 }
