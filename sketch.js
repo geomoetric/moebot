@@ -1,7 +1,7 @@
 var buttons = []; // Array of design objects
 var gridTopLefts = [];
 var gridCenters = [];
-var shapeOptions = [' '];
+var shapeOptions = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''];
 var sel,
   wWidth,
   wHeight,
@@ -49,7 +49,8 @@ function setup() {
 
   p = new txt('A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences.', '');
 
-  // bug = new modShape();
+  // Get random shape
+  shape = shapeOptions[Math.floor(Math.random() * shapeOptions.length)];
 
 }
 
@@ -79,7 +80,7 @@ function modShape() {
     fill('#18181a');
     textFont(myFont);
     textSize(modSize);
-    text('', this.x, this.y);
+    text(shape, this.x, this.y);
   };
 }
 
