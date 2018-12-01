@@ -46,6 +46,9 @@ function setup() {
   h3 = new txt('Heading 3', 'h3');
 
   p = new txt('A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences.', '');
+
+  bug = new modShape();
+
 }
 
 function draw() {
@@ -55,10 +58,25 @@ function draw() {
   for (var i=0; i<buttons.length; i++) {
     buttons[i].display();
   }
-  fill('#ED225D');
-  textFont(myFont);
-  textSize(100);
-  text('', 100, 100);
+  bug.display();
+}
+
+// Object Template
+function modShape() {
+  const pos = round(random(0, 19));
+  this.x = gridCenters[pos].x;
+  this.y = gridCenters[pos].y;
+
+  let modSize = (cellWidth / 5) * (round(random(1, 5) * 2));
+  this.diameter = modSize;
+  this.liked = 0;
+
+  this.display = function() {
+    fill('#18181a');
+    textFont(myFont);
+    textSize(modSize);
+    text('', 100, 100);
+  };
 }
 
 // Text Template
