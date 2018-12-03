@@ -1,4 +1,5 @@
 var buttons = []; // Array of design objects
+var workingGrid = [];
 var gridTopLefts = [];
 var gridCenters = [];
 var localFont = ['HelveticaNeue', 'AkzidenzGroteskBQ-Reg', 'Baskerville', 'ClarendonURW-Lig', 'BodoniURW-Reg', 'CormorantGaramond-Medium', 'Times-Roman', 'UniversLTStd', 'ACaslonPro-Regular'];
@@ -95,9 +96,9 @@ function draw() {
 
 // Object Template
 function modShape() {
-  const pos = round(random(0, 19));
-  this.x = round(gridTopLefts[pos].x);
-  this.y = (round(gridTopLefts[pos].y)) + cellHeight;
+  const pos = round(random(0, workingGrid.length - 1));
+  this.x = round(workingGrid[pos].x);
+  this.y = (round(workingGrid[pos].y)) + cellHeight;
 
   // console.log(this.x + ', ' + this.y);
 
@@ -117,9 +118,11 @@ function modShape() {
 
 // Text Template
 function txt(string, style) {
-  let pos = round(random(0, 19));
-  this.x = gridTopLefts[pos].x;
-  this.y = gridTopLefts[pos].y;
+  let pos = round(random(0, workingGrid.length - 1));
+  console.log(pos);
+  console.log(workingGrid);
+  this.x = workingGrid[pos].x;
+  this.y = workingGrid[pos].y;
   this.text = createElement('textarea', string);
   this.text.position(this.x, this.y);
   // this.text.width = (cellWidth * 2) + baseWidth;
@@ -130,6 +133,9 @@ function txt(string, style) {
   this.text.style('width', textWidth);
   this.text.style('height', textHeight);
   this.text.addClass(style);
+  workingGrid.splice(pos, 2);
+  // delete workingGrid[pos];
+  // delete workingGrid[pos + 1];
 }
 
 // Object Template

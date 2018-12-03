@@ -28,6 +28,7 @@ Moe-Bot is super easy to install. Just download a copy of this repository and op
 
 * [p5.js](https://p5js.org/)—Core javascript graphics library.
 * [Tesserae-Regular.otf](https://github.com/hlotvonen/glyph-drawing-club/blob/master/fonts/Tesserae-Regular.otf)—Open source modular symbol font used to generate shapes.
+* [Symbola.otf](http://users.teilar.gr/~g1951d/)—Truly the best unicode symbol font. Using the Miscellaneous Symbol and Dingbat blocks from unicode.
 * [Normalize.css](http://necolas.github.io/normalize.css/)—A stylesheet to standardise css across browsers.
 
 ## Authors

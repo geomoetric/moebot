@@ -72,6 +72,8 @@ function grid() {
     storeCoordinate(tempx, tempy, gridCenters);
   }
 
+
+  workingGrid = gridTopLefts.slice(0);
   console.log(gridTopLefts);
   console.log(gridCenters);
 }
