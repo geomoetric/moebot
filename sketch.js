@@ -119,21 +119,33 @@ function modShape() {
 // Text Template
 function txt(string, style) {
   let pos = round(random(0, workingGrid.length - 1));
-  console.log(pos);
   console.log(workingGrid);
+  console.log(pos);
+
+  let textWidth = 0;
   this.x = workingGrid[pos].x;
   this.y = workingGrid[pos].y;
   this.text = createElement('textarea', string);
   this.text.position(this.x, this.y);
   // this.text.width = (cellWidth * 2) + baseWidth;
-  let textWidth = (cellWidth * 2) + (baseWidth * 1);
+  if ([4, 9, 14, 19].includes(pos)) {
+    workingGrid.splice(pos - 1, 1);
+    textWidth = cellWidth;
+  console.log(textWidth);
+  } else {
+    workingGrid.splice(pos - 1, 2);
+    textWidth = (cellWidth * 2) + (baseWidth * 1);
+  console.log(textWidth);
+  }
   textWidth = textWidth + 'px';
   let textHeight = cellHeight + 'px';
   // console.log(typeof textWidth);
   this.text.style('width', textWidth);
+  console.log(textWidth);
+  console.log(textHeight);
   this.text.style('height', textHeight);
   this.text.addClass(style);
-  workingGrid.splice(pos, 2);
+
   // delete workingGrid[pos];
   // delete workingGrid[pos + 1];
 }
