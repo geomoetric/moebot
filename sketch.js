@@ -2,6 +2,7 @@ var buttons = []; // Array of design objects
 var workingGrid = [];
 var gridTopLefts = [];
 var gridCenters = [];
+var shapes = [];
 var localFont = ['HelveticaNeue', 'AkzidenzGroteskBQ-Reg', 'Baskerville', 'ClarendonURW-Lig', 'BodoniURW-Reg', 'CormorantGaramond-Medium', 'Times-Roman', 'UniversLTStd', 'ACaslonPro-Regular'];
 var tesserae = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''];
 var symbola = ['☮', '☯', '☹', '☺', '☻', '☽', '☾', '♻', '⚛', '♠', '♣', '♥', '♦', '✖', '✚', '✤', '✦', '✱', '✳', '✴', '✶', '✷', '✸', '✹', '✺', '✻', '✽', '❉', '❊', '❋', '❖', '❛', '❜', '❝', '❞', '❢', '❣', '❮', '❯', '❰', '❱', '➜', '➝', '➞', '➟', '➠', '➡', '➤', '➥', '➦', '➷', '➸', '➹', '➼', '🞴', '🞹', '🞾', '🟅', '🟆', '🟊', '🟐', '🠨', '🠩', '🠪', '🠫', '🡰', '🡱', '🡲', '🡳', '🡴', '🡵', '🡶', '🡷', '🚫'];
@@ -20,16 +21,16 @@ var sel,
   h3,
   p,
   myFont,
-  shape,
+  //shape,
   shapeOptions,
   portrait,
   posGrid;
 
 function preload() {
 
+  // randomSeed(1);
   // const seed = random(100);
   // randomSeed(seed);
-  // console.log('Random Seed: ' + seed);
 
   console.log(random(localFont));
 
@@ -74,18 +75,21 @@ function setup() {
   grid();
 
   // Shape handler
-  // randomSeed(99);
-  console.log(random(0, 2));
   // Get random shape
-  // console.log(random(1, shapeOptions.length));
-  shape = shapeOptions[round(random(0, shapeOptions.length))];
-  // shape = random(shapeOptions);
+  for (var i = 0; i < round(random(1, 3)); i++) {
+    shapes.push(random(shapeOptions));
+  }
+  console.log(shapes);
 
   // Load design objects
-  for (var i = 0; i < 5; i++) {
-    buttons.push(new modShape());
+  for (var i = 0; i < shapes.length; i++) {
+    for (var j = 0; j < round(random(3, 13)); j++) {
+      buttons.push(new modShape(shapes[i]));
+    }
   }
+  console.log(buttons);
 
+  // Text
   h1  = new txt('Heading 1', 'h1');
 
   h2 = new txt('Heading 2', 'h2');
@@ -105,7 +109,7 @@ function draw() {
 }
 
 // Object Template
-function modShape() {
+function modShape(shape) {
   const pos = round(random(0, workingGrid.length - 1));
   this.x = round(workingGrid[pos].x);
   this.y = (round(workingGrid[pos].y)) + cellHeight;
@@ -128,11 +132,9 @@ function modShape() {
 
 // Text Template
 function txt(string, style) {
-  // console.log(posGrid);
-  // console.log(random(posGrid));
-  // let pos = round(random(0, workingGrid.length - 1));
+  // Need to get values from array that can loose values
+  // Makes WorkingGrid useless lol but I can optimize later
   let pos = random(posGrid);
-  // let coords = workingGrid[pos];
 
   let textWidth = 0;
   this.x = workingGrid[pos].x;
@@ -142,35 +144,26 @@ function txt(string, style) {
   // this.text.width = (cellWidth * 2) + baseWidth;
 
   if (!portrait) {
-    console.log('landscape');
     if ([4, 9, 14, 19].includes(pos)) {
       posGrid.splice(pos - 1, 1);
       textWidth = cellWidth;
-      console.log(style + ' width: ' + textWidth + ', pos: ' + pos);
     } else {
       posGrid.splice(pos - 1, 2);
       textWidth = (cellWidth * 2) + (baseWidth * 1);
-      console.log(style + ' width: ' + textWidth + ', pos: ' + pos);
     }
   } else {
-    console.log('portrait');
     if ([3, 7, 11, 15, 19].includes(pos)) {
       posGrid.splice(pos - 1, 1);
       textWidth = cellWidth;
-      console.log(style + ' width: ' + textWidth + ', pos: ' + pos);
     } else {
       posGrid.splice(pos - 1, 2);
       textWidth = (cellWidth * 2) + (baseWidth * 1);
-      console.log(style + ' width: ' + textWidth + ', pos: ' + pos);
     }
   }
 
   textWidth = textWidth + 'px';
   let textHeight = cellHeight + 'px';
-  // console.log(typeof textWidth);
   this.text.style('width', textWidth);
-  // console.log(textWidth);
-  // console.log(textHeight);
   this.text.style('height', textHeight);
   this.text.addClass(style);
 
@@ -181,7 +174,6 @@ function txt(string, style) {
 // Object Template
 function circ() {
   let pos = round(random(0, 19));
-  //console.log(position);
   this.x = gridCenters[pos].x;
   this.y = gridCenters[pos].y;
 
