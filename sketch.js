@@ -21,7 +21,8 @@ var sel,
   p,
   myFont,
   shape,
-  shapeOptions;
+  shapeOptions,
+  portrait;
 
 function preload() {
 
@@ -128,15 +129,31 @@ function txt(string, style) {
   this.text = createElement('textarea', string);
   this.text.position(this.x, this.y);
   // this.text.width = (cellWidth * 2) + baseWidth;
-  if ([4, 9, 14, 19].includes(pos)) {
-    workingGrid.splice(pos - 1, 1);
-    textWidth = cellWidth;
-  console.log(textWidth);
+
+  if (!portrait) {
+    console.log('landscape');
+    if ([4, 9, 14, 19].includes(pos)) {
+      workingGrid.splice(pos - 1, 1);
+      textWidth = cellWidth;
+      console.log(textWidth);
+    } else {
+      workingGrid.splice(pos - 1, 2);
+      textWidth = (cellWidth * 2) + (baseWidth * 1);
+      console.log(textWidth);
+    }
   } else {
-    workingGrid.splice(pos - 1, 2);
-    textWidth = (cellWidth * 2) + (baseWidth * 1);
-  console.log(textWidth);
+    console.log('portrait');
+    if ([3, 7, 11, 15, 19].includes(pos)) {
+      workingGrid.splice(pos - 1, 1);
+      textWidth = cellWidth;
+      console.log(textWidth);
+    } else {
+      workingGrid.splice(pos - 1, 2);
+      textWidth = (cellWidth * 2) + (baseWidth * 1);
+      console.log(textWidth);
+    }
   }
+
   textWidth = textWidth + 'px';
   let textHeight = cellHeight + 'px';
   // console.log(typeof textWidth);

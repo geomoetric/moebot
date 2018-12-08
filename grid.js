@@ -1,3 +1,4 @@
+var portrait;
 // Grid Function
 function grid() {
 
@@ -10,6 +11,7 @@ function grid() {
 
   // Portrait mode
   if (width < height) {
+    portrait = true;
     baseWidth = wWidth / 30;
     baseHeight = wHeight / 40;
 
@@ -38,6 +40,7 @@ function grid() {
 
     // Landscape Mode
   } else {
+    portrait = false;
     baseWidth = wWidth / 40;
     baseHeight = wHeight / 30;
 
