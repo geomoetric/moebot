@@ -128,11 +128,11 @@ function modShape() {
 
 // Text Template
 function txt(string, style) {
-  console.log(posGrid);
-  let pos = round(random(0, workingGrid.length - 1));
-  // let pos = workingGrid[random(posGrid)];
-  // console.log(workingGrid);
-  console.log(pos);
+  // console.log(posGrid);
+  // console.log(random(posGrid));
+  // let pos = round(random(0, workingGrid.length - 1));
+  let pos = random(posGrid);
+  // let coords = workingGrid[pos];
 
   let textWidth = 0;
   this.x = workingGrid[pos].x;
@@ -144,22 +144,22 @@ function txt(string, style) {
   if (!portrait) {
     console.log('landscape');
     if ([4, 9, 14, 19].includes(pos)) {
-      workingGrid.splice(pos - 1, 1);
+      posGrid.splice(pos - 1, 1);
       textWidth = cellWidth;
       console.log(style + ' width: ' + textWidth + ', pos: ' + pos);
     } else {
-      workingGrid.splice(pos - 1, 2);
+      posGrid.splice(pos - 1, 2);
       textWidth = (cellWidth * 2) + (baseWidth * 1);
       console.log(style + ' width: ' + textWidth + ', pos: ' + pos);
     }
   } else {
     console.log('portrait');
     if ([3, 7, 11, 15, 19].includes(pos)) {
-      workingGrid.splice(pos - 1, 1);
+      posGrid.splice(pos - 1, 1);
       textWidth = cellWidth;
       console.log(style + ' width: ' + textWidth + ', pos: ' + pos);
     } else {
-      workingGrid.splice(pos - 1, 2);
+      posGrid.splice(pos - 1, 2);
       textWidth = (cellWidth * 2) + (baseWidth * 1);
       console.log(style + ' width: ' + textWidth + ', pos: ' + pos);
     }
