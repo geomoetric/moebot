@@ -22,14 +22,18 @@ var sel,
   myFont,
   shape,
   shapeOptions,
-  portrait;
+  portrait,
+  posGrid;
 
 function preload() {
 
+  // const seed = random(100);
+  // randomSeed(seed);
+  // console.log('Random Seed: ' + seed);
 
-  let domFont = localFont[Math.floor(Math.random() * localFont.length)];
+  console.log(random(localFont));
 
-  let css = 'textarea { font-family: \'' + domFont + '\';}',
+  let css = 'textarea { font-family: \'' + random(localFont) + '\';}',
     head = document.head || document.getElementsByTagName('head')[0],
     style = document.createElement('style');
 
@@ -50,7 +54,7 @@ function preload() {
   } else {
     myFont = loadFont('Symbola.ttf');
     shapeOptions = symbola;
-  }; 
+  }
 }
 
 function setup() {
@@ -69,8 +73,13 @@ function setup() {
   // Create grid
   grid();
 
+  // Shape handler
+  // randomSeed(99);
+  console.log(random(0, 2));
   // Get random shape
-  shape = shapeOptions[Math.floor(Math.random() * shapeOptions.length)];
+  // console.log(random(1, shapeOptions.length));
+  shape = shapeOptions[round(random(0, shapeOptions.length))];
+  // shape = random(shapeOptions);
 
   // Load design objects
   for (var i = 0; i < 5; i++) {
@@ -119,8 +128,10 @@ function modShape() {
 
 // Text Template
 function txt(string, style) {
+  console.log(posGrid);
   let pos = round(random(0, workingGrid.length - 1));
-  console.log(workingGrid);
+  // let pos = workingGrid[random(posGrid)];
+  // console.log(workingGrid);
   console.log(pos);
 
   let textWidth = 0;
@@ -135,22 +146,22 @@ function txt(string, style) {
     if ([4, 9, 14, 19].includes(pos)) {
       workingGrid.splice(pos - 1, 1);
       textWidth = cellWidth;
-      console.log(textWidth);
+      console.log(style + ' width: ' + textWidth + ', pos: ' + pos);
     } else {
       workingGrid.splice(pos - 1, 2);
       textWidth = (cellWidth * 2) + (baseWidth * 1);
-      console.log(textWidth);
+      console.log(style + ' width: ' + textWidth + ', pos: ' + pos);
     }
   } else {
     console.log('portrait');
     if ([3, 7, 11, 15, 19].includes(pos)) {
       workingGrid.splice(pos - 1, 1);
       textWidth = cellWidth;
-      console.log(textWidth);
+      console.log(style + ' width: ' + textWidth + ', pos: ' + pos);
     } else {
       workingGrid.splice(pos - 1, 2);
       textWidth = (cellWidth * 2) + (baseWidth * 1);
-      console.log(textWidth);
+      console.log(style + ' width: ' + textWidth + ', pos: ' + pos);
     }
   }
 
@@ -158,8 +169,8 @@ function txt(string, style) {
   let textHeight = cellHeight + 'px';
   // console.log(typeof textWidth);
   this.text.style('width', textWidth);
-  console.log(textWidth);
-  console.log(textHeight);
+  // console.log(textWidth);
+  // console.log(textHeight);
   this.text.style('height', textHeight);
   this.text.addClass(style);
 

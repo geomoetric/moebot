@@ -1,6 +1,8 @@
-var portrait;
+// var portrait;
 // Grid Function
 function grid() {
+
+  posGrid = [...Array(20).keys()];
 
   function storeCoordinate(xVal, yVal, array) {
     array.push({ x: xVal, y: yVal });
@@ -77,8 +79,8 @@ function grid() {
 
 
   workingGrid = gridTopLefts.slice(0);
-  console.log(gridTopLefts);
-  console.log(gridCenters);
+  // console.log(gridTopLefts);
+  // console.log(gridCenters);
 }
 
 //-------------------------------------
