@@ -11,9 +11,8 @@ Moe-bot lets people design with machine intelligence on the web. Its algorithm m
 
 ### Project Speculation
 
-Six years ago, I began thinking about Moebot thanks to a computer’s suggestion. The computer ran a [website](https://www.stumbleupon.com/) that directed me to [OpenProcessing.org](https://www.openprocessing.org/), and introduced me to the world of creative coding. 
-![image of open processing]()
-This site boasted something few others could—developers and artists working together on code to create art. OpenProcessing opened my eyes to the possibilities of creating art with code.
+Six years ago, I began thinking about Moebot thanks to a computer’s suggestion. The computer ran a [website](https://www.stumbleupon.com/) that directed me to [OpenProcessing.org](https://www.openprocessing.org/), and introduced me to the world of creative coding. This site boasted something few others could—developers and artists working together on code to create art. OpenProcessing opened my eyes to the possibilities of creating art with code.
+
 > The obvious next question was—can you use code to make design?
 
 As the years went by, this question burned in the back of my mind. Every time I found something interesting on artificial intelligence, generative art, or algorithmic design I bookmarked it. I took every opportunity to design projects around generative code. The result of these ruminations were the beginnings of my capstone.
@@ -46,6 +45,7 @@ With that in mind, this is my simplified definition of Artificial intelligence:
 > Artificial Intelligence models thinking, perception, and action to make.
 
 ___
+
 ### Rapid Prototyping
 
 I found myself stuck in a rut toward the end of my research. The research was fine but the focus was not—I still did not know what the problem was I wanted to solve. My solution was to rapidly prototype a couple of websites to show off the potentials of artificial intelligence and design.
