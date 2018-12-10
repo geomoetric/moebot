@@ -44,11 +44,33 @@ As you can imagine, everyone instantly understood that quote and even my Grandmo
 With that in mind, this is my simplified definition of Artificial intelligence:
 
 > Artificial Intelligence models thinking, perception, and action to make.
+
 ___
 ### Rapid Prototyping
 
-Here’s why Moebot is important. The invention of the computer—at minimum a low level machine intelligence—changed every aspect of our lives. We have realized that to get the most out of the computer, we have to shift our thinking to adapt and compliment this artificial intelligence. 
+I found myself stuck in a rut toward the end of my research. The research was fine but the focus was not—I still did not know what the problem was I wanted to solve. My solution was to rapidly prototype a couple of websites to show off the potentials of artificial intelligence and design.
+
+![Youtube AI Mockup](/assets/images/Youtube_MI.png)
+
+This is a simple visual interpretation of machine intelligence. Youtube already calculates how likely you are to click on a video, so you can make the thumbnails larger or smaller based on that data. Arranging them in a Fibonacci spiral is just a plus when you have all that computational power at your disposal.
+
+![Wikipedia AI Mockup](/assets/images/Wikipedia_MI.png)
+
+What if Wikipedia needed a redesign? The last time they did it was [difficult and controversial](https://en.wikipedia.org/wiki/History_of_Wikipedia#Look_and_feel). To add a two column layout on a site as large as wikipedia, you could use AI to comp through the site and figure out all the use-cases ahead of time, or to render it on the fly.
+
+![Healthcare AI Mockup](/assets/images/Healthcare_MI.png)
+
+Finally, we have Healthcare.gov. With all the potential users and user needs, perhaps AI could craft a custom experience for every user. Even if they misspell something, people have a right to access and take advantage of healthcare.
+
+Here’s why this is important. The invention of the computer—at minimum a low level machine intelligence—changed every aspect of our lives. We have realized that to get the most out of the computer, we have to shift our thinking to adapt and compliment this artificial intelligence. 
+
 > We sacrifice potential design advancement when our digital design experiences simply mirror physical design processes. If we instead design in tandem with artificial intelligence, the possibilities increase exponentially.
+
+The experiments above show off how this shift in thinking can impact web design. Yet these experiments do not crystalize the AI driven design experience. Someone could look at them and think “well I’m not building YouTube, so who cares.” This is where my problem finally came into focus. 
+
+> The Problem—AI Driven Design needs a prototypical poster-child that other designers can build on.
+
+My charge is to make something that a designer can use to create design. The components are elemental—type, shape, and layout. The styling are black and white as to not distract. Finally, the project should be open source so others can iterate upon it. With that, I was ready to build.
 
 ___
 ### Pre-Alpha Milestone—Setup & Objects
