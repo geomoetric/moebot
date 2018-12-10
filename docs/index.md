@@ -10,10 +10,20 @@ Moe-bot lets people design with machine intelligence on the web. Its algorithm m
 * <kbd>tab</kbd> : Overlay grids for reference
 
 ## Dev History
-- Project Speculation—mind mapping
-- Research—Findings
-- Rapid prototyping—Mockups
-- 
+
+### Project Speculation—mind mapping
+
+### Research—Findings
+
+### Rapid prototyping—Mockups
+
+### Pre-alpha Milestone—Setup & Objects
+
+### Pre-alpha Milestone—Grid & Layout
+
+### Pre-alpha Milestone—Fonts & Shapes
+
+### Alpha
 
 ## Getting Started
 
