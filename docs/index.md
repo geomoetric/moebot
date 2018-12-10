@@ -17,7 +17,9 @@ Six years ago, I began thinking about Moebot thanks to a computer’s suggestion
 
 As the years went by, this question burned in the back of my mind. Every time I found something interesting on artificial intelligence, generative art, or algorithmic design I bookmarked it. I took every opportunity to design projects around generative code. The result of these ruminations were the beginnings of my capstone.
 
-![Mind map](/assets/images/mindmap.png)
+<figure>
+<img src="/assets/images/mindmap.png" alt="Moebot">
+</figure>
 
 By the time summer of 2018 came to a close, I had plenty of material to work with but no focus. I knew I wanted to create something for the web, and I knew I wanted it to be on generative design, but I had no idea what the problem was.
 
@@ -57,13 +59,13 @@ I found myself stuck in a rut toward the end of my research. The research was fi
 This is a simple visual interpretation of machine intelligence. Youtube already calculates how likely you are to click on a video, so you can make the thumbnails larger or smaller based on that data. Arranging them in a Fibonacci spiral is just a plus when you have all that computational power at your disposal.
 
 <figure>
-<img src=“/assets/images/Wikipedia_MI.png” alt=“Wikipedia AI Mockup">
+<img src="/assets/images/Wikipedia_MI.png" alt="Wikipedia AI Mockup">
 </figure>
 
 What if Wikipedia needed a redesign? The last time they did it was [difficult and controversial](https://en.wikipedia.org/wiki/History_of_Wikipedia#Look_and_feel). To add a two column layout on a site as large as wikipedia, you could use AI to comp through the site and figure out all the use-cases ahead of time, or to render it on the fly.
 
 <figure>
-<img src=“/assets/images/Healthcare_MI.png” alt=“Healthcare AI Mockup">
+<img src="/assets/images/Healthcare_MI.png" alt="Healthcare AI Mockup">
 </figure>
 
 Finally, we have Healthcare.gov. With all the potential users and user needs, perhaps AI could craft a custom experience for every user. Even if they misspell something, people have a right to access and take advantage of healthcare.
@@ -80,19 +82,44 @@ My charge is to make something that a designer can use to create design. The com
 
 ___
 ### Pre-Alpha Milestone—Setup & Objects
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, tortor id sollicitudin venenatis, ex lorem semper libero, nec porta lectus nibh sit amet velit. Sed at egestas turpis. Ut id iaculis arcu, sit amet dictum massa. Donec elementum sapien in lorem accumsan pharetra. Nulla in sollicitudin lectus. Integer imperdiet lacus ac sem volutpat, et volutpat magna pharetra. Sed non consectetur massa. Ut rhoncus, augue ut placerat malesuada, neque tellus aliquam mi, viverra lobortis metus.
+<figure>
+<img src="/assets/images/mindmap.png" alt="Moebot">
+</figure>
+
+<figure>
+<img src="/assets/images/mindmap.png" alt="Moebot">
+</figure>
 
 ___
 ### Pre-Alpha Milestone—Grid & Layout
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, tortor id sollicitudin venenatis, ex lorem semper libero, nec porta lectus nibh sit amet velit. Sed at egestas turpis. Ut id iaculis arcu, sit amet dictum massa. Donec elementum sapien in lorem accumsan pharetra. Nulla in sollicitudin lectus. Integer imperdiet lacus ac sem volutpat, et volutpat magna pharetra. Sed non consectetur massa. Ut rhoncus, augue ut placerat malesuada, neque tellus aliquam mi, viverra lobortis metus.
+<figure>
+<img src="/assets/images/mindmap.png" alt="Moebot">
+</figure>
+
+<figure>
+<img src="/assets/images/mindmap.png" alt="Moebot">
+</figure>
 
 ___
 ### Pre-Alpha Milestone—Fonts & Shapes
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, tortor id sollicitudin venenatis, ex lorem semper libero, nec porta lectus nibh sit amet velit. Sed at egestas turpis. Ut id iaculis arcu, sit amet dictum massa. Donec elementum sapien in lorem accumsan pharetra. Nulla in sollicitudin lectus. Integer imperdiet lacus ac sem volutpat, et volutpat magna pharetra. Sed non consectetur massa. Ut rhoncus, augue ut placerat malesuada, neque tellus aliquam mi, viverra lobortis metus.
+<figure>
+<img src="/assets/images/mindmap.png" alt="Moebot">
+</figure>
+
+<figure>
+<img src="/assets/images/mindmap.png" alt="Moebot">
+</figure>
 
 ___
 ### Alpha
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, tortor id sollicitudin venenatis, ex lorem semper libero, nec porta lectus nibh sit amet velit. Sed at egestas turpis. Ut id iaculis arcu, sit amet dictum massa. Donec elementum sapien in lorem accumsan pharetra. Nulla in sollicitudin lectus. Integer imperdiet lacus ac sem volutpat, et volutpat magna pharetra. Sed non consectetur massa. Ut rhoncus, augue ut placerat malesuada, neque tellus aliquam mi, viverra lobortis metus.
+
+<figure>
+<img src="/assets/images/mindmap.png" alt="Moebot">
+</figure>
+
+<figure>
+<img src="/assets/images/mindmap.png" alt="Moebot">
+</figure>
 
 ___
 ## Getting Started
