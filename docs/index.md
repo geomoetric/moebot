@@ -51,14 +51,14 @@ ___
 I found myself stuck in a rut toward the end of my research. The research was fine but the focus was not—I still did not know what the problem was I wanted to solve. My solution was to rapidly prototype a couple of websites to show off the potentials of artificial intelligence and design.
 
 <figure>
-![Youtube AI Mockup](/assets/images/Youtube_MI.png)
+<img src="/assets/images/Youtube_MI.png" alt="Youtube AI Mockup">
 </figure>
 
 This is a simple visual interpretation of machine intelligence. Youtube already calculates how likely you are to click on a video, so you can make the thumbnails larger or smaller based on that data. Arranging them in a Fibonacci spiral is just a plus when you have all that computational power at your disposal.
 
 <figure>
 <img src=“/assets/images/Wikipedia_MI.png>
-<figure>
+</figure>
 
 What if Wikipedia needed a redesign? The last time they did it was [difficult and controversial](https://en.wikipedia.org/wiki/History_of_Wikipedia#Look_and_feel). To add a two column layout on a site as large as wikipedia, you could use AI to comp through the site and figure out all the use-cases ahead of time, or to render it on the fly.
 
