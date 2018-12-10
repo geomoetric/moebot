@@ -1,6 +1,6 @@
-Moe-bot lets people design with machine intelligence on the web. Its algorithm models thinking, perception, and action to make designs. This proof-of-concept generates modernist layouts, typography, and geometry on the web.
+<article>
 
-{{TOC}}
+Moe-bot lets people design with machine intelligence on the web. Its algorithm models thinking, perception, and action to make designs. This proof-of-concept generates modernist layouts, typography, and geometry on the web.
 
 ## Controls
 
@@ -25,22 +25,22 @@ By the time summer of 2018 came to a close, I had plenty of material to work wit
 
 ___
 ### Research
-When the evidence suggests that no one else is doing the work you are trying to do, is that a good or bad sign? Thats the conundrum of AI driven design—either you have functional machine intelligence or visually pleasing art experiments—rarely both. Regardless, I found a few examples:
+When the evidence suggests that no one else is doing the work you are trying to do, is that a good or bad sign? That is the conundrum of AI-driven design—either you have functional machine intelligence or visually pleasing art experiments—rarely both. Regardless, I found a few examples:
 
-- [algorithms.design](https://algorithms.design/)—The  best collection of algorithmic design on the web.
-- [inspirobot.me](http://inspirobot.me/)—A generator that creates inspiring quote images. Despite working with text and images this project is too gimmicky to be used in most design contexts. 
-- [randomatizm.hack.exchange](http://randomatizm.hack.exchange/)—The closest I got to the functionality of generative art while approaching some sort of usability. A little goes a long way, even for constructivist posters!
-- [Vox’s Algorithmic Redesign](https://product.voxmedia.com/2014/12/17/7405131/algorithmic-design-how-vox-picks-a-winning-layout-out-of-thousands)—Vox used Algorithmic design to generate it homepage, but once they got the layout they liked, Vox stopped the algorithm. It would be more interesting if your layout adapted itself for your needs rather than a one size fits all approach.
-- [AI Generated Nude Portraits](https://robbiebarrat.github.io/oth/nude.html)—Again on the artistic size, but this project shows the high sophistication and the clear pitfalls of this technology.
+- [algorithms.design](https://algorithms.design/)—The best collection of algorithmic design on the web.
+- [inspirobot.me](http://inspirobot.me/)—A generator that creates inspiring quote images. Despite working with text and images, this project is too gimmicky to be used in most design contexts. 
+- [randomatizm.hack.exchange](http://randomatizm.hack.exchange/)—The closest I got to the functionality of generative art while approaching some usability. A little goes a long way, even for constructivist posters!
+- [Vox’s Algorithmic Redesign](https://product.voxmedia.com/2014/12/17/7405131/algorithmic-design-how-vox-picks-a-winning-layout-out-of-thousands)—Vox used Algorithmic design to generate its homepage, but once they got the layout they liked, Vox stopped the algorithm. It would be more interesting if your layout adapted itself for your needs rather than a one size fits all approach.
+- [AI Generated Nude Portraits](https://robbiebarrat.github.io/oth/nude.html)—Again on the artistic side, but this project shows the high sophistication and the obvious pitfalls of this technology.
 
-Meanwhile, my classes on artificial intelligence presented new obstacles and opportunity. AI is a discipline that comes with baggage that ranges from the virtual assistant in your pocket to the chrome skeletons time traveling to [terminate your existence](https://www.imdb.com/title/tt0088247/). It was important for me to have a ready definition of AI that anyone could understand. I got halfway there through Dr. Henry Patrick Winston—Director of the MIT Artificial Intelligence Laboratory from 1972 to 1997:
+Meanwhile, my classes on artificial intelligence presented new obstacles and opportunity. AI is a discipline that comes with baggage that ranges from the virtual assistant in your pocket to the chrome skeletons time traveling to [terminate your existence](https://www.imdb.com/title/tt0088247/). It was vital for me to have a handy definition of AI that anyone could understand. I got halfway there through Dr. Henry Patrick Winston—Director of the MIT Artificial Intelligence Laboratory from 1972 to 1997:
 
 > “[Artificial Intelligence is] about algorithms enabled by constraints exposed by representations that model targeted thinking, perception, and action.” —Dr. Henry Patrick Winston—Director of the MIT Artificial Intelligence Laboratory from 1972 to 1997
 
-As you can imagine, everyone instantly understood that quote and even my Grandmother calls me to ask about neural networks. Or not. Whats good about the quote is its relation to how many designers think about their work:
+As you can imagine, everyone instantly understood that quote and even my Grandmother calls me to ask about neural networks. Or not. However, if you juxtapose that quote against famous designers describing design:
 
 > “The difference between good design and great design is intelligence.” —Tibor Kalman, Founder of M & Co. and Colors magazine
-> “Design is the method of putting form and content together.” —Paul Rand, Corporate Design Strategist and Yale Professor
+> “Design is the method of putting form and content together.” —Paul Rand, Corporate Design Strategist, and Yale Professor
 
 With that in mind, this is my simplified definition of Artificial intelligence:
 
@@ -50,19 +50,19 @@ ___
 
 ### Rapid Prototyping
 
-I found myself stuck in a rut toward the end of my research. The research was fine but the focus was not—I still did not know what the problem was I wanted to solve. My solution was to rapidly prototype a couple of websites to show off the potentials of artificial intelligence and design.
+I found myself stuck in a rut toward the end of my research. The research was fine, but the focus was not—I still did not know what the problem was I wanted to solve. My solution was to rapidly prototype a couple of websites to show off the potentials of artificial intelligence and design.
 
 <figure>
 <img src="/assets/images/Youtube_MI.png" alt="Youtube AI Mockup">
 </figure>
 
-This is a simple visual interpretation of machine intelligence. Youtube already calculates how likely you are to click on a video, so you can make the thumbnails larger or smaller based on that data. Arranging them in a Fibonacci spiral is just a plus when you have all that computational power at your disposal.
+Here is a simple visual interpretation of machine intelligence. Youtube already calculates how likely you are to click on a video, so you can make the thumbnails larger or smaller based on that data. Arranging them in a Fibonacci spiral is just a plus when you have all that computational power at your disposal.
 
 <figure>
 <img src="/assets/images/Wikipedia_MI.png" alt="Wikipedia AI Mockup">
 </figure>
 
-What if Wikipedia needed a redesign? The last time they did it was [difficult and controversial](https://en.wikipedia.org/wiki/History_of_Wikipedia#Look_and_feel). To add a two column layout on a site as large as wikipedia, you could use AI to comp through the site and figure out all the use-cases ahead of time, or to render it on the fly.
+What if Wikipedia needed a redesign? The last time they did it was [difficult and controversial](https://en.wikipedia.org/wiki/History_of_Wikipedia#Look_and_feel). To add a two column layout on a site as large as Wikipedia, you could use AI to comp through the site and figure out all the use-cases ahead of time, or to render it on the fly.
 
 <figure>
 <img src="/assets/images/Healthcare_MI.png" alt="Healthcare AI Mockup">
@@ -70,15 +70,15 @@ What if Wikipedia needed a redesign? The last time they did it was [difficult an
 
 Finally, we have Healthcare.gov. With all the potential users and user needs, perhaps AI could craft a custom experience for every user. Even if they misspell something, people have a right to access and take advantage of healthcare.
 
-Here’s why this is important. The invention of the computer—at minimum a low level machine intelligence—changed every aspect of our lives. We have realized that to get the most out of the computer, we have to shift our thinking to adapt and compliment this artificial intelligence. 
+Here’s why this is important. The invention of the computer—at minimum a low-level machine intelligence—changed every aspect of our lives. We have realized that to get the most out of the computer, we have to shift our thinking to adapt and compliment this artificial intelligence. 
 
 > We sacrifice potential design advancement when our digital design experiences simply mirror physical design processes. If we instead design in tandem with artificial intelligence, the possibilities increase exponentially.
 
-The experiments above show off how this shift in thinking can impact web design. Yet these experiments do not crystalize the AI driven design experience. Someone could look at them and think “well I’m not building YouTube, so who cares.” This is where my problem finally came into focus. 
+The experiments above show off how this shift in thinking can impact web design. These experiments do not crystallize the AI-driven design experience. Someone could look at them and think “well I’m not building YouTube, so who cares.” Here is where my problem finally came into focus. 
 
 > The Problem—AI Driven Design needs a prototypical poster-child that other designers can build on.
 
-My charge is to make something that a designer can use to create design. The components are elemental—type, shape, and layout. The styling are black and white as to not distract. Finally, the project should be open source so others can iterate upon it. With that, I was ready to build.
+My charge is to make something that a designer can use to create design. The components are elemental—type, shape, and layout. The styling is black and white as not to distract. Finally, the project should be open source so others can iterate upon it. With that, I was ready to build.
 
 ___
 
@@ -87,7 +87,7 @@ ___
 <img src="/assets/images/2.png" alt="Moebot">
 </figure>
 
-In the beginning there was just a bunch of circles. For a while I had to configure non visual things like placement, grid, and interactivity, so circles were the star of the show.
+In the beginning, there was just a bunch of circles. For a while I had to configure nonvisual things like placement, grid, and interactivity, so circles were the star of the show.
 
 <figure>
 <img src="/assets/images/3.png" alt="Moebot">
@@ -99,36 +99,36 @@ Then I added editable text boxes. As you can see here, I made a quick poster for
 <img src="/assets/images/8.png" alt="Moebot">
 </figure>
 
-The aliens are coming! Yet, there is something peaceful about this composition.
+The aliens are coming! There is something peaceful about this composition.
 
 <figure>
 <img src="/assets/images/4.png" alt="Moebot">
 </figure>
 
-Here you can see the grid, something you can activate with the <kbd>tab</kbd> key. In the beginning I had difficulties with text aligning to the far right and overlapping out of the grid system—but that has since been fixed.
+Here you can see the grid, something you can activate with the <kbd>tab</kbd> key. In the beginning, I had difficulties with text aligning to the far right and overlapping out of the grid system—but I fixed it.
 
 <figure>
 <img src="/assets/images/5.png" alt="Moebot">
 </figure>
 
-At this point I had some new shapes and unicode symbols randomly arranging themselves on the grid. 
+At this point, I had some new shapes and Unicode symbols randomly arranging themselves on the grid. 
 
 <figure>
 <img src="/assets/images/6.png" alt="Moebot">
 </figure>
 
-Now fonts will variably change when refreshed.
+Now fonts variably change when refreshed.
 
 <figure>
 <img src="/assets/images/7.png" alt="Moebot">
 </figure>
 
-I happened to thing this was an interesting composition. As you can see, text no longer overlaps with the shapes. 
+I happened to think this was an interesting composition. As you can see, text no longer overlaps with the shapes. 
 
 ### Conclusion
 
 At all times I had an idea for an alpha which I wanted to show for critique. An inflection point where this project can progress in any direction. I feel that I have hit this alpha, and I want to discuss my work warts and all. 
-There have been many gratifying moments in this process. A certain paternal feeling occurs when you name your artificial intelligence after yourself. I was there for Moebot’s first steps, its first words, and I am here to guide it through adolescence. Like any proud parent, I am grateful that so many have been curious about this project—that so many people have offered their suggestions and enthusiasm. When I see the wheels start turning in people’s minds, thats when I know Moebot is doing its job
+There have been many gratifying moments in this process. A certain paternal feeling occurs when you name your artificial intelligence after yourself. I was there for Moebot’s first steps, its first words, and I am here to guide it through adolescence. Like any proud parent, I am grateful that so many have been curious about this project—that so many people have offered their suggestions and enthusiasm. When I see the wheels start turning in people’s minds, that is when I know Moebot is doing its job
 
 ___
 ___
@@ -169,3 +169,4 @@ Moe-Bot falls under the Apache License - see the [LICENSE.md](LICENSE.md) file f
 
 * Kudos to the [UT Design Department](https://designcreativetech.utexas.edu/) and all the guest critics whose feedback significantly improved this project.
 
+</article>
