@@ -1,5 +1,3 @@
-<article>
-
 Moe-bot lets people design with machine intelligence on the web. Its algorithm models thinking, perception, and action to make designs. This proof-of-concept generates modernist layouts, typography, and geometry on the web.
 
 ## Controls
@@ -169,4 +167,3 @@ Moe-Bot falls under the Apache License - see the [LICENSE.md](LICENSE.md) file f
 
 * Kudos to the [UT Design Department](https://designcreativetech.utexas.edu/) and all the guest critics whose feedback significantly improved this project.
 
-</article>

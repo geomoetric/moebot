@@ -76,7 +76,7 @@ function setup() {
 
   // Shape handler
   // Get random shape
-  for (var i = 0; i < 3; i++) {
+  for (var i = 0; i < round(random(1, 3)); i++) {
     shapes.push(random(shapeOptions));
   }
   console.log(shapes);
@@ -90,13 +90,13 @@ function setup() {
   console.log(buttons);
 
   // Text
-  h1  = new txt('Heading 1', 'h1');
+  h1  = new txt('Moebot', 'h1');
 
-  h2 = new txt('Heading 2', 'h2');
+  h2 = new txt('by Eric Moe', 'h2');
 
-  h3 = new txt('Heading 3', 'h3');
+  h3 = new txt('More info at moebot.design', 'h3');
 
-  p = new txt('A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences.', '');
+  p = new txt('Moe-bot lets people design with machine intelligence on the web. Its algorithm models thinking, perception, and action to make designs. This proof-of-concept generates modernist layouts, typography, and geometry on the web', '');
 }
 
 function draw() {
