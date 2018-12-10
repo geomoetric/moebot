@@ -31,9 +31,24 @@ When the evidence suggests that no one else is doing the work you are trying to 
 - [randomatizm.hack.exchange](http://randomatizm.hack.exchange/)—The closest I got to the functionality of generative art while approaching some sort of usability. A little goes a long way, even for constructivist posters!
 - [Vox’s Algorithmic Redesign](https://product.voxmedia.com/2014/12/17/7405131/algorithmic-design-how-vox-picks-a-winning-layout-out-of-thousands)—Vox used Algorithmic design to generate it homepage, but once they got the layout they liked, Vox stopped the algorithm. It would be more interesting if your layout adapted itself for your needs rather than a one size fits all approach.
 - [AI Generated Nude Portraits](https://robbiebarrat.github.io/oth/nude.html)—Again on the artistic size, but this project shows the high sophistication and the clear pitfalls of this technology.
+
+Meanwhile, my classes on artificial intelligence presented new obstacles and opportunity. AI is a discipline that comes with baggage that ranges from the virtual assistant in your pocket to the chrome skeletons time traveling to [terminate your existence](https://www.imdb.com/title/tt0088247/). It was important for me to have a ready definition of AI that anyone could understand. I got halfway there through Dr. Henry Patrick Winston—Director of the MIT Artificial Intelligence Laboratory from 1972 to 1997:
+
+> “[Artificial Intelligence is] about algorithms enabled by constraints exposed by representations that model targeted thinking, perception, and action.” —Dr. Henry Patrick Winston—Director of the MIT Artificial Intelligence Laboratory from 1972 to 1997
+
+As you can imagine, everyone instantly understood that quote and even my Grandmother calls me to ask about neural networks. Or not. Whats good about the quote is its relation to how many designers think about their work:
+
+> “The difference between good design and great design is intelligence.” —Tibor Kalman, Founder of M & Co. and Colors magazine
+> “Design is the method of putting form and content together.” —Paul Rand, Corporate Design Strategist and Yale Professor
+
+With that in mind, this is my simplified definition of Artificial intelligence:
+
+> Artificial Intelligence models thinking, perception, and action to make.
 ___
 ### Rapid Prototyping
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, tortor id sollicitudin venenatis, ex lorem semper libero, nec porta lectus nibh sit amet velit. Sed at egestas turpis. Ut id iaculis arcu, sit amet dictum massa. Donec elementum sapien in lorem accumsan pharetra. Nulla in sollicitudin lectus. Integer imperdiet lacus ac sem volutpat, et volutpat magna pharetra. Sed non consectetur massa. Ut rhoncus, augue ut placerat malesuada, neque tellus aliquam mi, viverra lobortis metus.
+
+Here’s why Moebot is important. The invention of the computer—at minimum a low level machine intelligence—changed every aspect of our lives. We have realized that to get the most out of the computer, we have to shift our thinking to adapt and compliment this artificial intelligence. 
+> We sacrifice potential design advancement when our digital design experiences simply mirror physical design processes. If we instead design in tandem with artificial intelligence, the possibilities increase exponentially.
 
 ___
 ### Pre-Alpha Milestone—Setup & Objects
