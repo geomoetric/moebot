@@ -4,29 +4,43 @@ Moe-bot lets people design with machine intelligence on the web. Its algorithm m
 
 ## Controls
 
-* <kbd>caps lock</kbd> : Refresh page and generate new design
+* <kbd>capslock</kbd> : Refresh page and generate new design
 * <kbd>tab</kbd> : Overlay grids for reference
 
-## Dev History
+## Process
 
-### Project Speculation—mind mapping
+### Project Speculation
+
+Six years ago, I began thinking about Moebot thanks to a computer’s suggestion. The computer ran a [website](https://www.stumbleupon.com/) that directed me to [OpenProcessing.org](https://www.openprocessing.org/), and introduced me to the world of creative coding. 
+![image of open processing]()
+This site boasted something few others could—developers and artists working together on code to create art. OpenProcessing opened my eyes to the possibilities of creating art with code.
+> The obvious next question was—can you use code to make design?
+
+As the years went by, this question burned in the back of my mind. Every time I found something interesting on artificial intelligence, generative art, or algorithmic design I bookmarked it. I took every opportunity to design projects around generative code. The result of these ruminations were the beginnings of my capstone.
+![Image of mind map](/assets/images/mindmap.png)
+By the time summer of 2018 came to a close, I had plenty of material to work with but no focus. I knew I wanted to create something for the web, and I knew I wanted it to be on generative design, but I had no idea what the problem was.
+
+___
+### Research
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, tortor id sollicitudin venenatis, ex lorem semper libero, nec porta lectus nibh sit amet velit. Sed at egestas turpis. Ut id iaculis arcu, sit amet dictum massa. Donec elementum sapien in lorem accumsan pharetra. Nulla in sollicitudin lectus. Integer imperdiet lacus ac sem volutpat, et volutpat magna pharetra. Sed non consectetur massa. Ut rhoncus, augue ut placerat malesuada, neque tellus aliquam mi, viverra lobortis metus.
 
-### Research—Findings
+___
+### Rapid Prototyping
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, tortor id sollicitudin venenatis, ex lorem semper libero, nec porta lectus nibh sit amet velit. Sed at egestas turpis. Ut id iaculis arcu, sit amet dictum massa. Donec elementum sapien in lorem accumsan pharetra. Nulla in sollicitudin lectus. Integer imperdiet lacus ac sem volutpat, et volutpat magna pharetra. Sed non consectetur massa. Ut rhoncus, augue ut placerat malesuada, neque tellus aliquam mi, viverra lobortis metus.
 
-### Rapid prototyping—Mockups
+___
+### Pre-Alpha Milestone—Setup & Objects
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, tortor id sollicitudin venenatis, ex lorem semper libero, nec porta lectus nibh sit amet velit. Sed at egestas turpis. Ut id iaculis arcu, sit amet dictum massa. Donec elementum sapien in lorem accumsan pharetra. Nulla in sollicitudin lectus. Integer imperdiet lacus ac sem volutpat, et volutpat magna pharetra. Sed non consectetur massa. Ut rhoncus, augue ut placerat malesuada, neque tellus aliquam mi, viverra lobortis metus.
 
-### Pre-alpha Milestone—Setup & Objects
+___
+### Pre-Alpha Milestone—Grid & Layout
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, tortor id sollicitudin venenatis, ex lorem semper libero, nec porta lectus nibh sit amet velit. Sed at egestas turpis. Ut id iaculis arcu, sit amet dictum massa. Donec elementum sapien in lorem accumsan pharetra. Nulla in sollicitudin lectus. Integer imperdiet lacus ac sem volutpat, et volutpat magna pharetra. Sed non consectetur massa. Ut rhoncus, augue ut placerat malesuada, neque tellus aliquam mi, viverra lobortis metus.
 
-### Pre-alpha Milestone—Grid & Layout
+___
+### Pre-Alpha Milestone—Fonts & Shapes
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, tortor id sollicitudin venenatis, ex lorem semper libero, nec porta lectus nibh sit amet velit. Sed at egestas turpis. Ut id iaculis arcu, sit amet dictum massa. Donec elementum sapien in lorem accumsan pharetra. Nulla in sollicitudin lectus. Integer imperdiet lacus ac sem volutpat, et volutpat magna pharetra. Sed non consectetur massa. Ut rhoncus, augue ut placerat malesuada, neque tellus aliquam mi, viverra lobortis metus.
 
-### Pre-alpha Milestone—Fonts & Shapes
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, tortor id sollicitudin venenatis, ex lorem semper libero, nec porta lectus nibh sit amet velit. Sed at egestas turpis. Ut id iaculis arcu, sit amet dictum massa. Donec elementum sapien in lorem accumsan pharetra. Nulla in sollicitudin lectus. Integer imperdiet lacus ac sem volutpat, et volutpat magna pharetra. Sed non consectetur massa. Ut rhoncus, augue ut placerat malesuada, neque tellus aliquam mi, viverra lobortis metus.
-
+___
 ### Alpha
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, tortor id sollicitudin venenatis, ex lorem semper libero, nec porta lectus nibh sit amet velit. Sed at egestas turpis. Ut id iaculis arcu, sit amet dictum massa. Donec elementum sapien in lorem accumsan pharetra. Nulla in sollicitudin lectus. Integer imperdiet lacus ac sem volutpat, et volutpat magna pharetra. Sed non consectetur massa. Ut rhoncus, augue ut placerat malesuada, neque tellus aliquam mi, viverra lobortis metus.
 
@@ -43,16 +57,17 @@ Moe-Bot is developed and tested on Google Chrome (Version 70). Cross-browser tes
 
 Moe-Bot is super easy to install. Just download a copy of this repository and open the index.html file directly in your browser.
 
-1. Download the latest version of Moe-Bot from https://github.com/geomoetric/moe-bot/releases.
+1. Download the latest version of Moe-Bot from [github.com/geomoetric/moe-bot/releases](https://github.com/geomoetric/moe-bot/releases).
 2. Unzip the folder.
-3. Open the index.html file in Google Chrome to view it—<kbd>cmd</kbd><kbd>o</kbd> to open from Chrome directly.
+3. Open the index.html file in Google Chrome to view it—<kbd>cmd</kbd> + <kbd>o</kbd> to open from Chrome directly.
 
 ## Built With
 
 * [p5.js](https://p5js.org/)—Core javascript graphics library.
 * [Tesserae-Regular.otf](https://github.com/hlotvonen/glyph-drawing-club/blob/master/fonts/Tesserae-Regular.otf)—Open source modular symbol font used to generate shapes.
 * [Symbola.otf](http://users.teilar.gr/~g1951d/)—Truly the best unicode symbol font. Using the Miscellaneous Symbol and Dingbat blocks from unicode.
-* [Normalize.css](http://necolas.github.io/normalize.css/)—A stylesheet to standardise css across browsers.
+* [Normalize.css](http://necolas.github.io/normalize.css/)—A stylesheet to standardize css across browsers.
+* [Tufte CSS](https://edwardtufte.github.io/tufte-css/)—A stylesheet for the documentation, tweaked with Moebot branding.
 
 ## Authors
 
