@@ -81,44 +81,34 @@ The experiments above show off how this shift in thinking can impact web design.
 My charge is to make something that a designer can use to create design. The components are elemental—type, shape, and layout. The styling are black and white as to not distract. Finally, the project should be open source so others can iterate upon it. With that, I was ready to build.
 
 ___
-### Pre-Alpha Milestone—Setup & Objects
+
+### Pre-Alpha Development
 <figure>
-<img src="/assets/images/mindmap.png" alt="Moebot">
+<img src="/assets/images/2.png" alt="Moebot">
 </figure>
 
 <figure>
-<img src="/assets/images/mindmap.png" alt="Moebot">
-</figure>
-
-___
-### Pre-Alpha Milestone—Grid & Layout
-<figure>
-<img src="/assets/images/mindmap.png" alt="Moebot">
+<img src="/assets/images/3.png" alt="Moebot">
 </figure>
 
 <figure>
-<img src="/assets/images/mindmap.png" alt="Moebot">
-</figure>
-
-___
-### Pre-Alpha Milestone—Fonts & Shapes
-<figure>
-<img src="/assets/images/mindmap.png" alt="Moebot">
+<img src="/assets/images/4.png" alt="Moebot">
 </figure>
 
 <figure>
-<img src="/assets/images/mindmap.png" alt="Moebot">
-</figure>
-
-___
-### Alpha
-
-<figure>
-<img src="/assets/images/mindmap.png" alt="Moebot">
+<img src="/assets/images/5.png" alt="Moebot">
 </figure>
 
 <figure>
-<img src="/assets/images/mindmap.png" alt="Moebot">
+<img src="/assets/images/6.png" alt="Moebot">
+</figure>
+
+<figure>
+<img src="/assets/images/7.png" alt="Moebot">
+</figure>
+
+<figure>
+<img src="/assets/images/8.png" alt="Moebot">
 </figure>
 
 ___
