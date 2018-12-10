@@ -87,31 +87,52 @@ ___
 <img src="/assets/images/2.png" alt="Moebot">
 </figure>
 
+In the beginning there was just a bunch of circles. For a while I had to configure non visual things like placement, grid, and interactivity, so circles were the star of the show.
+
 <figure>
 <img src="/assets/images/3.png" alt="Moebot">
 </figure>
 
-<figure>
-<img src="/assets/images/4.png" alt="Moebot">
-</figure>
-
-<figure>
-<img src="/assets/images/5.png" alt="Moebot">
-</figure>
-
-<figure>
-<img src="/assets/images/6.png" alt="Moebot">
-</figure>
-
-<figure>
-<img src="/assets/images/7.png" alt="Moebot">
-</figure>
+Then I added editable text boxes. As you can see here, I made a quick poster for my friend Max about his habit of solitaire during class. I included this to show some organic experimentation with the tool.
 
 <figure>
 <img src="/assets/images/8.png" alt="Moebot">
 </figure>
 
+The aliens are coming! Yet, there is something peaceful about this composition.
+
+<figure>
+<img src="/assets/images/4.png" alt="Moebot">
+</figure>
+
+Here you can see the grid, something you can activate with the <kbd>tab</kbd> key. In the beginning I had difficulties with text aligning to the far right and overlapping out of the grid system—but that has since been fixed.
+
+<figure>
+<img src="/assets/images/5.png" alt="Moebot">
+</figure>
+
+At this point I had some new shapes and unicode symbols randomly arranging themselves on the grid. 
+
+<figure>
+<img src="/assets/images/6.png" alt="Moebot">
+</figure>
+
+Now fonts will variably change when refreshed.
+
+<figure>
+<img src="/assets/images/7.png" alt="Moebot">
+</figure>
+
+I happened to thing this was an interesting composition. As you can see, text no longer overlaps with the shapes. 
+
+### Conclusion
+
+At all times I had an idea for an alpha which I wanted to show for critique. An inflection point where this project can progress in any direction. I feel that I have hit this alpha, and I want to discuss my work warts and all. 
+There have been many gratifying moments in this process. A certain paternal feeling occurs when you name your artificial intelligence after yourself. I was there for Moebot’s first steps, its first words, and I am here to guide it through adolescence. Like any proud parent, I am grateful that so many have been curious about this project—that so many people have offered their suggestions and enthusiasm. When I see the wheels start turning in people’s minds, thats when I know Moebot is doing its job
+
 ___
+___
+
 ## Getting Started
 
 Use these instructions to get a copy of the project up and running on your local machine for experimentation and extension.
