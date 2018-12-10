@@ -17,13 +17,20 @@ This site boasted something few others could—developers and artists working to
 > The obvious next question was—can you use code to make design?
 
 As the years went by, this question burned in the back of my mind. Every time I found something interesting on artificial intelligence, generative art, or algorithmic design I bookmarked it. I took every opportunity to design projects around generative code. The result of these ruminations were the beginnings of my capstone.
-![Image of mind map](/assets/images/mindmap.png)
+
+![Mind map](/assets/images/mindmap.png)
+
 By the time summer of 2018 came to a close, I had plenty of material to work with but no focus. I knew I wanted to create something for the web, and I knew I wanted it to be on generative design, but I had no idea what the problem was.
 
 ___
 ### Research
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, tortor id sollicitudin venenatis, ex lorem semper libero, nec porta lectus nibh sit amet velit. Sed at egestas turpis. Ut id iaculis arcu, sit amet dictum massa. Donec elementum sapien in lorem accumsan pharetra. Nulla in sollicitudin lectus. Integer imperdiet lacus ac sem volutpat, et volutpat magna pharetra. Sed non consectetur massa. Ut rhoncus, augue ut placerat malesuada, neque tellus aliquam mi, viverra lobortis metus.
+When the evidence suggests that no one else is doing the work you are trying to do, is that a good or bad sign? Thats the conundrum of AI driven design—either you have functional machine intelligence or visually pleasing art experiments—rarely both. Regardless, I found a few examples:
 
+- [algorithms.design](https://algorithms.design/)—The  best collection of algorithmic design on the web.
+- [inspirobot.me](http://inspirobot.me/)—A generator that creates inspiring quote images. Despite working with text and images this project is too gimmicky to be used in most design contexts. 
+- [randomatizm.hack.exchange](http://randomatizm.hack.exchange/)—The closest I got to the functionality of generative art while approaching some sort of usability. A little goes a long way, even for constructivist posters!
+- [Vox’s Algorithmic Redesign](https://product.voxmedia.com/2014/12/17/7405131/algorithmic-design-how-vox-picks-a-winning-layout-out-of-thousands)—Vox used Algorithmic design to generate it homepage, but once they got the layout they liked, Vox stopped the algorithm. It would be more interesting if your layout adapted itself for your needs rather than a one size fits all approach.
+- [AI Generated Nude Portraits](https://robbiebarrat.github.io/oth/nude.html)—Again on the artistic size, but this project shows the high sophistication and the clear pitfalls of this technology.
 ___
 ### Rapid Prototyping
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, tortor id sollicitudin venenatis, ex lorem semper libero, nec porta lectus nibh sit amet velit. Sed at egestas turpis. Ut id iaculis arcu, sit amet dictum massa. Donec elementum sapien in lorem accumsan pharetra. Nulla in sollicitudin lectus. Integer imperdiet lacus ac sem volutpat, et volutpat magna pharetra. Sed non consectetur massa. Ut rhoncus, augue ut placerat malesuada, neque tellus aliquam mi, viverra lobortis metus.
