@@ -2,6 +2,8 @@
 
 Moe-bot lets people design with machine intelligence on the web. Its algorithm models thinking, perception, and action to make designs. This proof-of-concept generates modernist layouts, typography, and geometry on the web.
 
+{{TOC}}
+
 ## Controls
 
 * <kbd>caps lock</kbd> : Refresh page and generate new design
