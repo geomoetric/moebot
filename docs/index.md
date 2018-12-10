@@ -10,19 +10,27 @@ Moe-bot lets people design with machine intelligence on the web. Its algorithm m
 ## Dev History
 
 ### Project Speculation—mind mapping
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, tortor id sollicitudin venenatis, ex lorem semper libero, nec porta lectus nibh sit amet velit. Sed at egestas turpis. Ut id iaculis arcu, sit amet dictum massa. Donec elementum sapien in lorem accumsan pharetra. Nulla in sollicitudin lectus. Integer imperdiet lacus ac sem volutpat, et volutpat magna pharetra. Sed non consectetur massa. Ut rhoncus, augue ut placerat malesuada, neque tellus aliquam mi, viverra lobortis metus.
 
 ### Research—Findings
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, tortor id sollicitudin venenatis, ex lorem semper libero, nec porta lectus nibh sit amet velit. Sed at egestas turpis. Ut id iaculis arcu, sit amet dictum massa. Donec elementum sapien in lorem accumsan pharetra. Nulla in sollicitudin lectus. Integer imperdiet lacus ac sem volutpat, et volutpat magna pharetra. Sed non consectetur massa. Ut rhoncus, augue ut placerat malesuada, neque tellus aliquam mi, viverra lobortis metus.
 
 ### Rapid prototyping—Mockups
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, tortor id sollicitudin venenatis, ex lorem semper libero, nec porta lectus nibh sit amet velit. Sed at egestas turpis. Ut id iaculis arcu, sit amet dictum massa. Donec elementum sapien in lorem accumsan pharetra. Nulla in sollicitudin lectus. Integer imperdiet lacus ac sem volutpat, et volutpat magna pharetra. Sed non consectetur massa. Ut rhoncus, augue ut placerat malesuada, neque tellus aliquam mi, viverra lobortis metus.
 
 ### Pre-alpha Milestone—Setup & Objects
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, tortor id sollicitudin venenatis, ex lorem semper libero, nec porta lectus nibh sit amet velit. Sed at egestas turpis. Ut id iaculis arcu, sit amet dictum massa. Donec elementum sapien in lorem accumsan pharetra. Nulla in sollicitudin lectus. Integer imperdiet lacus ac sem volutpat, et volutpat magna pharetra. Sed non consectetur massa. Ut rhoncus, augue ut placerat malesuada, neque tellus aliquam mi, viverra lobortis metus.
 
 ### Pre-alpha Milestone—Grid & Layout
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, tortor id sollicitudin venenatis, ex lorem semper libero, nec porta lectus nibh sit amet velit. Sed at egestas turpis. Ut id iaculis arcu, sit amet dictum massa. Donec elementum sapien in lorem accumsan pharetra. Nulla in sollicitudin lectus. Integer imperdiet lacus ac sem volutpat, et volutpat magna pharetra. Sed non consectetur massa. Ut rhoncus, augue ut placerat malesuada, neque tellus aliquam mi, viverra lobortis metus.
 
 ### Pre-alpha Milestone—Fonts & Shapes
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, tortor id sollicitudin venenatis, ex lorem semper libero, nec porta lectus nibh sit amet velit. Sed at egestas turpis. Ut id iaculis arcu, sit amet dictum massa. Donec elementum sapien in lorem accumsan pharetra. Nulla in sollicitudin lectus. Integer imperdiet lacus ac sem volutpat, et volutpat magna pharetra. Sed non consectetur massa. Ut rhoncus, augue ut placerat malesuada, neque tellus aliquam mi, viverra lobortis metus.
 
 ### Alpha
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, tortor id sollicitudin venenatis, ex lorem semper libero, nec porta lectus nibh sit amet velit. Sed at egestas turpis. Ut id iaculis arcu, sit amet dictum massa. Donec elementum sapien in lorem accumsan pharetra. Nulla in sollicitudin lectus. Integer imperdiet lacus ac sem volutpat, et volutpat magna pharetra. Sed non consectetur massa. Ut rhoncus, augue ut placerat malesuada, neque tellus aliquam mi, viverra lobortis metus.
 
+___
 ## Getting Started
 
 Use these instructions to get a copy of the project up and running on your local machine for experimentation and extension.
