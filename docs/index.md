@@ -57,13 +57,13 @@ I found myself stuck in a rut toward the end of my research. The research was fi
 This is a simple visual interpretation of machine intelligence. Youtube already calculates how likely you are to click on a video, so you can make the thumbnails larger or smaller based on that data. Arranging them in a Fibonacci spiral is just a plus when you have all that computational power at your disposal.
 
 <figure>
-<img src=“/assets/images/Wikipedia_MI.png>
+<img src=“/assets/images/Wikipedia_MI.png” alt=“Wikipedia AI Mockup">
 </figure>
 
 What if Wikipedia needed a redesign? The last time they did it was [difficult and controversial](https://en.wikipedia.org/wiki/History_of_Wikipedia#Look_and_feel). To add a two column layout on a site as large as wikipedia, you could use AI to comp through the site and figure out all the use-cases ahead of time, or to render it on the fly.
 
 <figure>
-<img src=“/assets/images/Healthcare_MI.png”>
+<img src=“/assets/images/Healthcare_MI.png” alt=“Healthcare AI Mockup">
 </figure>
 
 Finally, we have Healthcare.gov. With all the potential users and user needs, perhaps AI could craft a custom experience for every user. Even if they misspell something, people have a right to access and take advantage of healthcare.
