@@ -83,7 +83,7 @@ function setup() {
 
   // Load design objects
   for (var i = 0; i < shapes.length; i++) {
-    for (var j = 0; j < round(random(7, 13)); j++) {
+    for (var j = 0; j < round(random(3, 13)); j++) {
       buttons.push(new modShape(shapes[i]));
     }
   }
@@ -120,40 +120,40 @@ function modShape(shape) {
   this.diameter = modSize;
   this.liked = 0;
 
-  this.click = function() {
-    if (this.liked < 2) {
-      this.liked += 1;
-    } else {
-      this.liked = 0;
-    }
-    if (this.liked == 1) {
-      this.like();
-    } else if (this.liked == 2) {
-      this.dislike();
-    } else {
-      fill('#f8f8f9');
-      ellipse(this.x, this.y, this.diameter + sel + 0.35, this.diameter + sel + 0.35);
-      this.display();
-    }
-  }
+  // this.click = function() {
+  //   if (this.liked < 2) {
+  //     this.liked += 1;
+  //   } else {
+  //     this.liked = 0;
+  //   }
+  //   if (this.liked == 1) {
+  //     this.like();
+  //   } else if (this.liked == 2) {
+  //     this.dislike();
+  //   } else {
+  //     fill('#f8f8f9');
+  //     ellipse(this.x, this.y, this.diameter + sel + 0.35, this.diameter + sel + 0.35);
+  //     this.display();
+  //   }
+  // }
 
-  this.w1 = this.x;
-  this.w2 = this.x + modSize;
-  this.h1 = this.y;
-  this.h2 = this.y + modSize;
+  // this.w1 = this.x;
+  // this.w2 = this.x + modSize;
+  // this.h1 = this.y;
+  // this.h2 = this.y + modSize;
 
-  this.like = function() {
-    stroke('#40826d');
-    this.display();
-    // console.log('INSERT INTO `table_name`(time, element, liked, x, y, w, h) VALUES (' + Date.now() + ', circle, TRUE, ' + this.x + ', ' + this.y + ', ' + this.diameter + ', ' + this.diameter + ');');
-  };
+  // this.like = function() {
+  //   stroke('#40826d');
+  //   this.display();
+  //   // console.log('INSERT INTO `table_name`(time, element, liked, x, y, w, h) VALUES (' + Date.now() + ', circle, TRUE, ' + this.x + ', ' + this.y + ', ' + this.diameter + ', ' + this.diameter + ');');
+  // };
 
-  this.dislike = function() {
-    fill('#e32636');
-    ellipse(this.x, this.y, this.diameter + sel, this.diameter + sel);
-    this.display();
-    console.log('INSERT INTO `table_name`(time, element, liked, x, y, w, h) VALUES (' + Date.now() + ', circle, FALSE, ' + this.x + ', ' + this.y + ', ' + this.diameter + ', ' + this.diameter + ');');
-  };
+  // this.dislike = function() {
+  //   fill('#e32636');
+  //   ellipse(this.x, this.y, this.diameter + sel, this.diameter + sel);
+  //   this.display();
+  //   console.log('INSERT INTO `table_name`(time, element, liked, x, y, w, h) VALUES (' + Date.now() + ', circle, FALSE, ' + this.x + ', ' + this.y + ', ' + this.diameter + ', ' + this.diameter + ');');
+  // };
 
   this.display = function() {
     fill('#18181a');
