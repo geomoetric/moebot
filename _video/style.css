@@ -1,0 +1,111 @@
+html,
+body {
+  margin: auto;
+  padding: 0;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+html {
+  font-size: 1.25em;
+}
+
+body,
+textarea {
+  /* background-color: white; */
+  font-family: 'Helvetica Neue', 'helvetica', serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #18181a;
+  font-kerning: normal;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt", "lnum";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt", "lnum";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt", "lnum";
+  font-feature-settings: "kern", "liga", "clig", "calt", "lnum";
+}
+
+p {
+  margin-bottom: 1.3em;
+}
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1,
+.h1 {
+  font-size: 4.236em;
+}
+
+h2,
+.h2 {
+  font-size: 2.618em;
+}
+
+h3,
+.h3 {
+  font-size: 1.618em;
+}
+
+/* h1 { */
+/*   margin-top: 0; */
+/*   font-size: 6.854em; */
+/* } */
+
+small,
+.font_small {
+  font-size: 0.618em;
+}
+
+textarea {
+  outline: none;
+  resize: none;
+  border: 0;
+  background-color: #f8f8f9;
+  overflow: auto;
+  width: 600px;
+  height: 120px;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+i,
+em {
+/* use actual italic fonts here */
+}
+
+a {
+ color: #18181a;
+}
+
+a:hover,
+a:active {
+  color: #4967AA;
+}
+
+.h1,
+.h2,
+.h3,
+.marginless {
+  margin: 0;
+  padding: 0;
+}
+/* To add
+ * italics
+ * Mobile Text tweak = 16px=1em on mobile
+ * 45-75 chars widths
+ * Right padding of baseWidth
+
+ * Done
+ * underline/link
+ * Passed the type checklist
+ */
