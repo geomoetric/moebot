@@ -49,7 +49,7 @@ function grid() {
     // gridWidth = wWidth - (4 * baseWidth);
     // gridHeight = wHeight - (6 * baseHeight);
 
-    gridWidth = 1920;
+    gridWidth = 1912;
     gridHeight = 1136;
 
     cellWidth = (gridWidth - (4 * baseWidth)) / 5;

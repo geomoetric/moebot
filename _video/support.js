@@ -1,11 +1,11 @@
- // Window resize
- window.onresize = function() {
-   location.reload();
- }
+ // Window resize-----Disable for print
+ // window.onresize = function() {
+ //   location.reload();
+ // }
 
-function windowResized() {
-  redraw();
-}
+// function windowResized() {
+ //  redraw();
+// }
 
 // // Mouse Presses
 // function mousePressed() {
@@ -33,7 +33,7 @@ function keyPressed() {
     showGrid();
   }
   if (key === '9') {
-    // pdf.save();
+    pdf.save();
     console.log("printo?");
   }
 }

@@ -65,7 +65,7 @@ function setup() {
   // For faster loading
   // createCanvas(windowWidth, windowHeight);
 
-  // To use the p5.pdf.js method
+  // To use the p5.pdf.js method---just print to pdf otherwise
   // pdf = createPDF();
   // pdf.beginRecord();
 
@@ -179,7 +179,7 @@ function txt(string, style) {
   // this.text.width = (cellWidth * 2) + baseWidth;
 
   if (!portrait) {
-    if ([4, 9, 14, 19].includes(pos)) {
+    if ([4, 9, 14, 16, 19].includes(pos)) {
       posGrid.splice(pos - 1, 1);
       textWidth = cellWidth;
     } else {
