@@ -46,14 +46,19 @@ function grid() {
     baseWidth = wWidth / 40;
     baseHeight = wHeight / 30;
 
-    gridWidth = wWidth - (4 * baseWidth);
-    gridHeight = wHeight - (6 * baseHeight);
+    // gridWidth = wWidth - (4 * baseWidth);
+    // gridHeight = wHeight - (6 * baseHeight);
+
+    gridWidth = 1920;
+    gridHeight = 1136;
 
     cellWidth = (gridWidth - (4 * baseWidth)) / 5;
     cellHeight = (gridHeight - (3 * baseHeight)) / 4;
 
-    startX = baseWidth * 2;
-    startY = baseHeight * 2;
+    // startX = baseWidth * 2;
+    // startY = baseHeight * 2;
+    startX = 4;
+    startY = 40;
 
     y = 0;
     x = 0;
@@ -90,6 +95,8 @@ function showGrid() {
   let cellFullWidth = cellWidth + baseWidth;
   let cellFullHeight = cellHeight + baseHeight;
   stroke('#75DDDD');
+  strokeWeight(2);
+
 
   // Landscape Mode
   // Vertical

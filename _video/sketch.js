@@ -69,7 +69,7 @@ function setup() {
   // pdf = createPDF();
   // pdf.beginRecord();
 
-  background('#f8f8f9');
+  background('black');
 
   // Create grid
   grid();
@@ -100,7 +100,7 @@ function setup() {
 }
 
 function draw() {
-  fill('#18181a');
+  fill('white');
   noStroke();
   sel = width/40;
   for (var i=0; i<buttons.length; i++) {
@@ -131,7 +131,7 @@ function modShape(shape) {
   //   } else if (this.liked == 2) {
   //     this.dislike();
   //   } else {
-  //     fill('#f8f8f9');
+  //     fill('#ffffff');
   //     ellipse(this.x, this.y, this.diameter + sel + 0.35, this.diameter + sel + 0.35);
   //     this.display();
   //   }
@@ -156,7 +156,7 @@ function modShape(shape) {
   // };
 
   this.display = function() {
-    fill('#18181a');
+    fill('white');
     textFont(myFont);
     textSize(modSize);
     // text(shape, this.x, this.y);
@@ -243,7 +243,7 @@ function circ() {
     } else if (this.liked == 2) {
       this.dislike();
     } else {
-      fill('#f8f8f9');
+      fill('#ffffff');
       ellipse(this.x, this.y, this.diameter + sel + 0.35, this.diameter + sel + 0.35);
       this.display();
     }

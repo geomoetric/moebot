@@ -2,6 +2,8 @@ html,
 body {
   margin: auto;
   padding: 0;
+  background-color: black;
+ 
   /* display: flex; */
   /* justify-content: center; */
   /* align-items: center; */
@@ -13,11 +15,10 @@ html {
 
 body,
 textarea {
-  /* background-color: white; */
   font-family: 'Helvetica Neue', 'helvetica', serif;
   font-weight: 400;
   line-height: 1.45;
-  color: #18181a;
+  color: white;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt", "lnum";
   -ms-font-feature-settings: "kern", "liga", "clig", "calt", "lnum";
@@ -69,7 +70,7 @@ textarea {
   outline: none;
   resize: none;
   border: 0;
-  background-color: #f8f8f9;
+  background-color: black;
   overflow: auto;
   width: 600px;
   height: 120px;
@@ -84,7 +85,7 @@ em {
 }
 
 a {
- color: #18181a;
+ color: #fff;
 }
 
 a:hover,
