@@ -9,7 +9,7 @@ Moebot lets people design with machine intelligence on the web. Its algorithm mo
 
 ## Controls
 
-* <kbd>capslock</kbd> : Refresh page and generate new design
+* <kbd>esc</kbd> : Refresh page and generate new design
 * <kbd>tab</kbd> : Overlay grids for reference
 
 ## Process
@@ -22,7 +22,7 @@ Six years ago, I began thinking about Moebot thanks to a computer’s suggestion
 
 As the years went by, this question burned in the back of my mind. Every time I found something interesting on artificial intelligence, generative art, or algorithmic design I bookmarked it. I took every opportunity to design projects around generative code. The result of these ruminations were the beginnings of my capstone.
 
-<figure>
+<figure class="fullwidth">
 <img src="/assets/images/mindmap.png" alt="Moebot">
 </figure>
 
