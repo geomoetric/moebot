@@ -49,7 +49,7 @@ function preload() {
   head.appendChild(style);
 
   let x = round(random(1, 186));
-  if (x > 37) {
+  if (x < 10) {
     myFont = loadFont('Tesserae-Regular.otf');
     shapeOptions = tesserae;
   } else {
@@ -76,7 +76,7 @@ function setup() {
 
   // Shape handler
   // Get random shape
-  for (var i = 0; i < round(random(1, 3)); i++) {
+  for (var i = 0; i < round(random(1, 4)); i++) {
     shapes.push(random(shapeOptions));
   }
   console.log(shapes);
@@ -94,9 +94,9 @@ function setup() {
 
   h2 = new txt('by Eric Moe', 'h2');
 
-  h3 = new txt('More info at moebot.design', 'h3');
+  h3 = new txt('The design object that designs objects', 'h3');
 
-  p = new txt('Moe-bot lets people design with machine intelligence on the web. Its algorithm models thinking, perception, and action to make designs. This proof-of-concept generates modernist layouts, typography, and geometry on the web', '');
+  p = new txt("Machine intelligence runs everything from smartphones to space exploration. What would happen if we harnessed this cutting edge technology for design? Moebot models the design process to place grids, render text, and draw shapes. What's a human to do? Generate more output, create ideas faster, and push the boundaries of design. Visit moebot.design for more info or try the demo behind the glowing robot.", '');
 }
 
 function draw() {
@@ -206,65 +206,65 @@ function txt(string, style) {
   // delete workingGrid[pos + 1];
 }
 
-// Object Template
-function circ() {
-  let pos = round(random(0, 19));
-  this.x = gridCenters[pos].x;
-  this.y = gridCenters[pos].y;
+// // Object Template
+// function circ() {
+//   let pos = round(random(0, 19));
+//   this.x = gridCenters[pos].x;
+//   this.y = gridCenters[pos].y;
 
-  // For largest width...
-  // this.diameter = random(baseWidth, largest);
-  // Really Big
-  // let largest = (cellWidth * 3) + (baseWidth * 2);
-  // Slightly Big
-  // let largest = (cellWidth * 2) + (baseWidth * 1);
+//   // For largest width...
+//   // this.diameter = random(baseWidth, largest);
+//   // Really Big
+//   // let largest = (cellWidth * 3) + (baseWidth * 2);
+//   // Slightly Big
+//   // let largest = (cellWidth * 2) + (baseWidth * 1);
 
-  // Very Orderly
-  // this.diameter = random(baseWidth, cellWidth);
-  // Interesting scales
-  // let modSize = (cellWidth / 5) * round(random(1, 10));
-  let modSize = (cellWidth / 5) * (round(random(1, 5) * 2));
-  this.diameter = modSize;
-  this.liked = 0;
+//   // Very Orderly
+//   // this.diameter = random(baseWidth, cellWidth);
+//   // Interesting scales
+//   // let modSize = (cellWidth / 5) * round(random(1, 10));
+//   let modSize = (cellWidth / 5) * (round(random(1, 5) * 2));
+//   this.diameter = modSize;
+//   this.liked = 0;
 
-  this.w1 = this.x - (this.diameter / 2);
-  this.w2 = this.x + (this.diameter / 2);
-  this.h1 = this.y - (this.diameter / 2);
-  this.h2 = this.y + (this.diameter / 2);
+//   this.w1 = this.x - (this.diameter / 2);
+//   this.w2 = this.x + (this.diameter / 2);
+//   this.h1 = this.y - (this.diameter / 2);
+//   this.h2 = this.y + (this.diameter / 2);
 
-  this.click = function() {
-    if (this.liked < 2) {
-      this.liked += 1;
-    } else {
-      this.liked = 0;
-    }
-    if (this.liked == 1) {
-      this.like();
-    } else if (this.liked == 2) {
-      this.dislike();
-    } else {
-      fill('#ffffff');
-      ellipse(this.x, this.y, this.diameter + sel + 0.35, this.diameter + sel + 0.35);
-      this.display();
-    }
-  }
+//   this.click = function() {
+//     if (this.liked < 2) {
+//       this.liked += 1;
+//     } else {
+//       this.liked = 0;
+//     }
+//     if (this.liked == 1) {
+//       this.like();
+//     } else if (this.liked == 2) {
+//       this.dislike();
+//     } else {
+//       fill('#ffffff');
+//       ellipse(this.x, this.y, this.diameter + sel + 0.35, this.diameter + sel + 0.35);
+//       this.display();
+//     }
+//   }
 
-  this.like = function() {
-    fill('#40826d');
-    ellipse(this.x, this.y, this.diameter + sel, this.diameter + sel);
-    this.display();
-    console.log('INSERT INTO `table_name`(time, element, liked, x, y, w, h) VALUES (' + Date.now() + ', circle, TRUE, ' + this.x + ', ' + this.y + ', ' + this.diameter + ', ' + this.diameter + ');');
-  };
+//   this.like = function() {
+//     fill('#40826d');
+//     ellipse(this.x, this.y, this.diameter + sel, this.diameter + sel);
+//     this.display();
+//     console.log('INSERT INTO `table_name`(time, element, liked, x, y, w, h) VALUES (' + Date.now() + ', circle, TRUE, ' + this.x + ', ' + this.y + ', ' + this.diameter + ', ' + this.diameter + ');');
+//   };
 
-  this.dislike = function() {
-    fill('#e32636');
-    ellipse(this.x, this.y, this.diameter + sel, this.diameter + sel);
-    this.display();
-    console.log('INSERT INTO `table_name`(time, element, liked, x, y, w, h) VALUES (' + Date.now() + ', circle, FALSE, ' + this.x + ', ' + this.y + ', ' + this.diameter + ', ' + this.diameter + ');');
-  };
+//   this.dislike = function() {
+//     fill('#e32636');
+//     ellipse(this.x, this.y, this.diameter + sel, this.diameter + sel);
+//     this.display();
+//     console.log('INSERT INTO `table_name`(time, element, liked, x, y, w, h) VALUES (' + Date.now() + ', circle, FALSE, ' + this.x + ', ' + this.y + ', ' + this.diameter + ', ' + this.diameter + ');');
+//   };
 
-  this.display = function() {
-    fill('#18181a');
-    ellipse(this.x, this.y, this.diameter, this.diameter);
-  };
-}
+//   this.display = function() {
+//     fill('#18181a');
+//     ellipse(this.x, this.y, this.diameter, this.diameter);
+//   };
+// }
