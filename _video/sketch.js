@@ -83,7 +83,7 @@ function setup() {
 
   // Load design objects
   for (var i = 0; i < shapes.length; i++) {
-    for (var j = 0; j < round(random(3, 13)); j++) {
+    for (var j = 0; j < round(random(7, 13)); j++) {
       buttons.push(new modShape(shapes[i]));
     }
   }
