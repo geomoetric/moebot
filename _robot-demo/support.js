@@ -14,6 +14,21 @@ function keyPressed() {
     console.log("button press");
     window.location.reload();
   }
+  // More Shapes
+  if (key === '2') {
+  }
+  // Less Shapes
+  if (key === '3') {
+  }
+  // More Objects
+  if (key === '4') {
+  }
+  // Less Objects
+  if (key === '5') {
+  }
+  // Save
+  if (key === '6') {
+  }
   if (keyCode === TAB) {
     showGrid();
   }

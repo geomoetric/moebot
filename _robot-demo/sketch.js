@@ -60,10 +60,10 @@ function preload() {
 
 function setup() {
   // For SVG
-  createCanvas(windowWidth, windowHeight, SVG);
+  // createCanvas(windowWidth, windowHeight, SVG);
 
   // For faster loading
-  // createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight);
 
   // To use the p5.pdf.js method
   // pdf = createPDF();

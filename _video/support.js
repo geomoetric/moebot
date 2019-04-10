@@ -25,6 +25,7 @@
 
 // Key Presses
 function keyPressed() {
+  // Reload
   if (key === '1') {
     console.log("reload");
     window.location.reload();
