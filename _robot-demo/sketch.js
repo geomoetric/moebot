@@ -25,6 +25,11 @@ var sel,
   shapeOptions,
   portrait,
   posGrid;
+var randShape = 3;
+  // for (var i = 0; i < round(random(1, 5)); i++) {
+var randAmount = 7;
+  // for (var j = 0; j < round(random(5, 16)); j++) {
+
 
 function preload() {
 
@@ -74,20 +79,24 @@ function setup() {
   // Create grid
   grid();
 
+  // Button Generator
+
   // Shape handler
   // Get random shape
-  for (var i = 0; i < round(random(1, 3)); i++) {
+  // replace
+  for (var i = 0; i < randShape); i++) {
     shapes.push(random(shapeOptions));
   }
-  console.log(shapes);
+  console.log(localStorage.getItem("shapeOption"));
 
   // Load design objects
   for (var i = 0; i < shapes.length; i++) {
-    for (var j = 0; j < round(random(7, 13)); j++) {
+    // replace
+    for (var j = 0; j < randAmount); j++) {
       buttons.push(new modShape(shapes[i]));
     }
   }
-  console.log(buttons);
+  console.log(localStorage.getItem("randAmount"));
 
   // Text
   h1  = new txt('Moebot', 'h1');
@@ -114,46 +123,9 @@ function modShape(shape) {
   this.x = round(workingGrid[pos].x);
   this.y = (round(workingGrid[pos].y)) + cellHeight;
 
-  // console.log(this.x + ', ' + this.y);
-
   let modSize = (cellWidth / 5) * (round(random(1, 5) * 2));
   this.diameter = modSize;
   this.liked = 0;
-
-  // this.click = function() {
-  //   if (this.liked < 2) {
-  //     this.liked += 1;
-  //   } else {
-  //     this.liked = 0;
-  //   }
-  //   if (this.liked == 1) {
-  //     this.like();
-  //   } else if (this.liked == 2) {
-  //     this.dislike();
-  //   } else {
-  //     fill('#f8f8f9');
-  //     ellipse(this.x, this.y, this.diameter + sel + 0.35, this.diameter + sel + 0.35);
-  //     this.display();
-  //   }
-  // }
-
-  // this.w1 = this.x;
-  // this.w2 = this.x + modSize;
-  // this.h1 = this.y;
-  // this.h2 = this.y + modSize;
-
-  // this.like = function() {
-  //   stroke('#40826d');
-  //   this.display();
-  //   // console.log('INSERT INTO `table_name`(time, element, liked, x, y, w, h) VALUES (' + Date.now() + ', circle, TRUE, ' + this.x + ', ' + this.y + ', ' + this.diameter + ', ' + this.diameter + ');');
-  // };
-
-  // this.dislike = function() {
-  //   fill('#e32636');
-  //   ellipse(this.x, this.y, this.diameter + sel, this.diameter + sel);
-  //   this.display();
-  //   console.log('INSERT INTO `table_name`(time, element, liked, x, y, w, h) VALUES (' + Date.now() + ', circle, FALSE, ' + this.x + ', ' + this.y + ', ' + this.diameter + ', ' + this.diameter + ');');
-  // };
 
   this.display = function() {
     fill('#18181a');
@@ -206,65 +178,3 @@ function txt(string, style) {
   // delete workingGrid[pos + 1];
 }
 
-// Object Template
-function circ() {
-  let pos = round(random(0, 19));
-  this.x = gridCenters[pos].x;
-  this.y = gridCenters[pos].y;
-
-  // For largest width...
-  // this.diameter = random(baseWidth, largest);
-  // Really Big
-  // let largest = (cellWidth * 3) + (baseWidth * 2);
-  // Slightly Big
-  // let largest = (cellWidth * 2) + (baseWidth * 1);
-
-  // Very Orderly
-  // this.diameter = random(baseWidth, cellWidth);
-  // Interesting scales
-  // let modSize = (cellWidth / 5) * round(random(1, 10));
-  let modSize = (cellWidth / 5) * (round(random(1, 5) * 2));
-  this.diameter = modSize;
-  this.liked = 0;
-
-  this.w1 = this.x - (this.diameter / 2);
-  this.w2 = this.x + (this.diameter / 2);
-  this.h1 = this.y - (this.diameter / 2);
-  this.h2 = this.y + (this.diameter / 2);
-
-  this.click = function() {
-    if (this.liked < 2) {
-      this.liked += 1;
-    } else {
-      this.liked = 0;
-    }
-    if (this.liked == 1) {
-      this.like();
-    } else if (this.liked == 2) {
-      this.dislike();
-    } else {
-      fill('#f8f8f9');
-      ellipse(this.x, this.y, this.diameter + sel + 0.35, this.diameter + sel + 0.35);
-      this.display();
-    }
-  }
-
-  this.like = function() {
-    fill('#40826d');
-    ellipse(this.x, this.y, this.diameter + sel, this.diameter + sel);
-    this.display();
-    console.log('INSERT INTO `table_name`(time, element, liked, x, y, w, h) VALUES (' + Date.now() + ', circle, TRUE, ' + this.x + ', ' + this.y + ', ' + this.diameter + ', ' + this.diameter + ');');
-  };
-
-  this.dislike = function() {
-    fill('#e32636');
-    ellipse(this.x, this.y, this.diameter + sel, this.diameter + sel);
-    this.display();
-    console.log('INSERT INTO `table_name`(time, element, liked, x, y, w, h) VALUES (' + Date.now() + ', circle, FALSE, ' + this.x + ', ' + this.y + ', ' + this.diameter + ', ' + this.diameter + ');');
-  };
-
-  this.display = function() {
-    fill('#18181a');
-    ellipse(this.x, this.y, this.diameter, this.diameter);
-  };
-}
