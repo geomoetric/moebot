@@ -24,12 +24,9 @@ var sel,
   //shape,
   shapeOptions,
   portrait,
+  randShape,
+  randAmount, 
   posGrid;
-var randShape = 3;
-  // for (var i = 0; i < round(random(1, 5)); i++) {
-var randAmount = 7;
-  // for (var j = 0; j < round(random(5, 16)); j++) {
-
 
 function preload() {
 
@@ -37,7 +34,7 @@ function preload() {
   // const seed = random(100);
   // randomSeed(seed);
 
-  console.log(random(localFont));
+  // console.log(random(localFont));
 
   let css = 'textarea { font-family: \'' + random(localFont) + '\';}',
     head = document.head || document.getElementsByTagName('head')[0],
@@ -79,24 +76,35 @@ function setup() {
   // Create grid
   grid();
 
+  // Get Values
+
+  if (localStorage.getItem("randShape") === "null") {
+    randShape = 3;
+    randAmount = 7;
+  } else {
+    randShape = parseInt(localStorage.getItem('randShape'));
+    randAmount = parseInt(localStorage.getItem('randAmount'));
+  }
   // Button Generator
 
   // Shape handler
   // Get random shape
   // replace
-  for (var i = 0; i < randShape); i++) {
+  for (var i = 0; i < randShape; i++) {
     shapes.push(random(shapeOptions));
   }
-  console.log(localStorage.getItem("shapeOption"));
-
+  // console.log(localStorage.getItem('randShape'));
+  console.log('random shape: ' + localStorage.getItem("randShape"));
+  
   // Load design objects
   for (var i = 0; i < shapes.length; i++) {
     // replace
-    for (var j = 0; j < randAmount); j++) {
+    for (var j = 0; j < randAmount; j++) {
       buttons.push(new modShape(shapes[i]));
     }
   }
-  console.log(localStorage.getItem("randAmount"));
+  // console.log(localStorage.getItem('randAmount'));
+  console.log('random amount: ' + localStorage.getItem("randAmount"));
 
   // Text
   h1  = new txt('Moebot', 'h1');
