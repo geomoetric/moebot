@@ -24,8 +24,14 @@ function keyPressed() {
     localStorage.setItem("randAmount", randAmount);
     console.log('random amount set: ' + localStorage.getItem("randAmount"));
 
+    // Load random text
+    slogan = round(random(0, (sloganText.length - 1)));
+    localStorage.setItem("slogan", slogan);
+    console.log('slogan set: ' + localStorage.getItem("slogan"));
+
     window.location.reload();
     }
+
     // More Shapes
     if (key === '2') {
       if (localStorage.getItem("randShape") >= 5) {
@@ -80,6 +86,28 @@ function keyPressed() {
       // html2canvas(document.getElementsByTagName("BODY")[0]).then(canvas => {
         // document.body.appendChild(canvas)
       // });
+    }
+    if (key === 'w' || key === 'd') {
+      // console.log('NEXT');
+      if (localStorage.getItem("slogan") >= (sloganText.length - 1)) {
+        console.log('at max: ' + localStorage.getItem("slogan"));
+      } else {
+        slogan = parseInt(localStorage.getItem("slogan")) + 1;
+        localStorage.setItem("slogan", slogan);
+        console.log('slogan set: ' + localStorage.getItem("slogan"));
+      }
+        window.location.reload();
+    }
+    if (key === 's' || key === 'a') {
+      // console.log('NEXT');
+      if (localStorage.getItem("slogan") <= 0) {
+        console.log('at min: ' + localStorage.getItem("slogan"));
+      } else {
+        slogan = parseInt(localStorage.getItem("slogan")) - 1;
+        localStorage.setItem("slogan", slogan);
+        console.log('slogan set: ' + localStorage.getItem("slogan"));
+      }
+        window.location.reload();
     }
     if (keyCode === TAB) {
       showGrid();

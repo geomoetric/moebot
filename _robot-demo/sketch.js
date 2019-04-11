@@ -6,6 +6,14 @@ var shapes = [];
 var localFont = ['HelveticaNeue', 'AkzidenzGroteskBQ-Reg', 'Baskerville', 'ClarendonURW-Lig', 'BodoniURW-Reg', 'CormorantGaramond-Medium', 'Times-Roman', 'UniversLTStd', 'ACaslonPro-Regular'];
 var tesserae = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''];
 var symbola = ['☮', '☯', '☹', '☺', '☻', '☽', '☾', '♻', '⚛', '♠', '♣', '♥', '♦', '✖', '✚', '✤', '✦', '✱', '✳', '✴', '✶', '✷', '✸', '✹', '✺', '✻', '✽', '❉', '❊', '❋', '❖', '❛', '❜', '❝', '❞', '❢', '❣', '❮', '❯', '❰', '❱', '➜', '➝', '➞', '➟', '➠', '➡', '➤', '➥', '➦', '➷', '➸', '➹', '➼', '🞴', '🞹', '🞾', '🟅', '🟆', '🟊', '🟐', '🠨', '🠩', '🠪', '🠫', '🡰', '🡱', '🡲', '🡳', '🡴', '🡵', '🡶', '🡷', '🚫'];
+var sloganText = ["More info at moebot.design.", 
+"Need a website that changes and adapts for users? Try Moebot! More info at moebot.design.",
+"Running out of room and patience for your print layout? Let Moebot figure it out! Page through more at moebot.design.",
+"See a shape that you like? Why not use Moebot to generate logo ideas? Take a closer look at moebot.design.",
+"If you have to print a bunch of posters, why not mix it up? Add some variety with Moebot at moebot.design.",
+"Will it take your job? No way—Moebot works best as a tool to augment human designers. Read more at moebot.design.",
+"Built off of generative juggernaut P5.js, Moebot is open source and runs in the browser. Check it out at moebot.design.",
+"Meet man and Moebot on Eric Moe's portfolio—ericmoe.co. Follow @geomoetric to see some of the designs generated tonight!"];
 var sel,
   wWidth,
   wHeight,
@@ -25,7 +33,8 @@ var sel,
   shapeOptions,
   portrait,
   randShape,
-  randAmount, 
+  randAmount,
+  slogan,
   posGrid;
 
 function preload() {
@@ -36,7 +45,7 @@ function preload() {
 
   // console.log(random(localFont));
 
-  let css = 'textarea { font-family: \'' + random(localFont) + '\';}',
+  let css = 'body { font-family: \'' + random(localFont) + '\';}',
     head = document.head || document.getElementsByTagName('head')[0],
     style = document.createElement('style');
 
@@ -81,9 +90,11 @@ function setup() {
   if (localStorage.getItem("randShape") === "null") {
     randShape = 3;
     randAmount = 7;
+    slogan = 0;
   } else {
     randShape = parseInt(localStorage.getItem('randShape'));
     randAmount = parseInt(localStorage.getItem('randAmount'));
+    slogan = parseInt(localStorage.getItem('slogan'));
   }
   // Button Generator
 
@@ -111,9 +122,11 @@ function setup() {
 
   h2 = new txt('by Eric Moe', 'h2');
 
-  h3 = new txt('More info at moebot.design', 'h3');
+  h3 = new txt(sloganText[slogan], 'h3');
+  console.log(sloganText[slogan])
+  console.log(localStorage.getItem('slogan'));
 
-  p = new txt('Moe-bot lets people design with machine intelligence on the web. Its algorithm models thinking, perception, and action to make designs. This proof-of-concept generates modernist layouts, typography, and geometry on the web', 'span');
+  p = new txt('<i class="fas fa-sync"></i>&nbsp;New—Generate random design.<br><i class="fas fa-plus-circle"></i>&nbsp;Variety—Increases types of shapes.<br><i class="fas fa-minus-circle"></i>&nbsp;Variety—Decreases types of shapes.<br><i class="fas fa-plus"></i>&nbsp;Volume—Increases number of objects.<br><i class="fas fa-minus"></i>&nbsp;Volume—Increases number of objects.<br><i class="fas fa-arrow-circle-down"></i>&nbsp;Save—Downloads code and screenshot.', 'p');
 }
 
 function draw() {

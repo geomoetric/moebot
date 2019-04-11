@@ -8,7 +8,7 @@ body {
 }
 
 html {
-  font-size: 1.25em;
+  font-size: 22px;
 }
 
 body,
@@ -26,17 +26,17 @@ textarea {
 }
 
 p {
+
   margin-bottom: 1.3em;
 }
 
 h1,
 h2,
 h3,
-span,
 .h1,
 .h2,
 .h3,
-.span {
+.p {
   margin: 1.414em 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
