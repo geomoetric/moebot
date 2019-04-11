@@ -75,6 +75,11 @@ function keyPressed() {
     // Save
     if (key === '6') {
        saveCanvas( Date.now() + 'photo', 'png');
+
+      // save(Date.now() + '.html');
+      // html2canvas(document.getElementsByTagName("BODY")[0]).then(canvas => {
+        // document.body.appendChild(canvas)
+      // });
     }
     if (keyCode === TAB) {
       showGrid();

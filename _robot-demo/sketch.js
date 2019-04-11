@@ -113,7 +113,7 @@ function setup() {
 
   h3 = new txt('More info at moebot.design', 'h3');
 
-  p = new txt('Moe-bot lets people design with machine intelligence on the web. Its algorithm models thinking, perception, and action to make designs. This proof-of-concept generates modernist layouts, typography, and geometry on the web', '');
+  p = new txt('Moe-bot lets people design with machine intelligence on the web. Its algorithm models thinking, perception, and action to make designs. This proof-of-concept generates modernist layouts, typography, and geometry on the web', 'span');
 }
 
 function draw() {
@@ -154,7 +154,7 @@ function txt(string, style) {
   let textWidth = 0;
   this.x = workingGrid[pos].x;
   this.y = workingGrid[pos].y;
-  this.text = createElement('textarea', string);
+  this.text = createElement(style, string);
   this.text.position(this.x, this.y);
   // this.text.width = (cellWidth * 2) + baseWidth;
 
