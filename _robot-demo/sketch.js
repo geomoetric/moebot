@@ -126,7 +126,7 @@ function setup() {
   console.log(sloganText[slogan])
   console.log(localStorage.getItem('slogan'));
 
-  p = new txt('<i class="fas fa-sync"></i>&nbsp;New—Generate random design.<br><i class="fas fa-plus-circle"></i>&nbsp;Variety—Increases types of shapes.<br><i class="fas fa-minus-circle"></i>&nbsp;Variety—Decreases types of shapes.<br><i class="fas fa-plus"></i>&nbsp;Volume—Increases number of objects.<br><i class="fas fa-minus"></i>&nbsp;Volume—Increases number of objects.<br><i class="fas fa-arrow-circle-down"></i>&nbsp;Save—Downloads code and screenshot.', 'p');
+  p = new txt('&nbsp;<i class="fas fa-sync"></i>&nbsp;New—Generate random design.<br>&nbsp;<i class="fas fa-plus-circle"></i>&nbsp;Variety—Increases types of shapes.<br>&nbsp;<i class="fas fa-minus-circle"></i>&nbsp;Variety—Decreases types of shapes.<br>&nbsp;<i class="fas fa-plus"></i>&nbsp;Volume—Increases number of objects.<br>&nbsp;<i class="fas fa-minus"></i>&nbsp;Volume—Decreases number of objects.<br>&nbsp;<i class="fas fa-arrow-circle-down"></i>&nbsp;Save—Downloads code and screenshot.', 'p');
 }
 
 function draw() {

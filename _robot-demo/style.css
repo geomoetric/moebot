@@ -25,21 +25,24 @@ textarea {
   font-feature-settings: "kern", "liga", "clig", "calt", "lnum";
 }
 
-p {
-
-  margin-bottom: 1.3em;
-}
-
 h1,
 h2,
 h3,
 .h1,
 .h2,
-.h3,
-.p {
-  margin: 1.414em 0 0.5em;
+.h3 {
+  /* margin: 1.414em 0 0.5em; */
+  padding: 0.25em;
   font-weight: inherit;
   line-height: 1.2;
+  background-color: #f8f8f9;
+}
+
+p {
+  /* margin-bottom: 0.5em 0.5em 1.3em; */
+  /* padding: 0.5em 0.5em 1.3em; */
+  padding: 0.25em;
+  margin: 0;
   background-color: #f8f8f9;
 }
 
@@ -100,14 +103,17 @@ a:active {
 .h3,
 .marginless {
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
 }
 
-.center {
+#center {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #f8f8f9;
+  background-color: #18181a;
+  z-index: 1000;
 }
 
 /* To add

@@ -4,6 +4,8 @@ title: Home
 ---
 
 # [Moebot](http://moebot.design/)
+## [Eric Moe's Portfolio](http://ericmoe.co/)
+## [Eric Moe's Social](http://geomoetric.com/)
 
 Moebot lets people design with machine intelligence on the web. Its algorithm models thinking, perception, and action to make designs. This proof-of-concept generates modernist layouts, typography, and geometry on the web. Designed by Eric Moe
 
