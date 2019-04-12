@@ -102,6 +102,14 @@ a:active {
   margin: 0;
   padding: 0;
 }
+
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* To add
  * italics
  * Mobile Text tweak = 16px=1em on mobile

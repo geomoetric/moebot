@@ -86,6 +86,14 @@ function keyPressed() {
       // html2canvas(document.getElementsByTagName("BODY")[0]).then(canvas => {
         // document.body.appendChild(canvas)
       // });
+      
+      createDiv("<h1 class=\"h1 center\">Saved!</h1>");
+      // document.getElementById("userAsCat").style.display="block";
+      // document.getElementById("becomeCat").style.display="none"
+      // setTimeout(function(){	
+      //   document.getElementById("userAsCat").style.display="none";					 
+      //   document.getElementById("becomeCat").style.display="block"i
+      // },10000);
     }
     if (key === 'w' || key === 'd') {
       // console.log('NEXT');
